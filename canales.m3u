@@ -1,5 +1,5 @@
 #EXTM3U
-
+#Peru
 #EXTINF:-1 tvg-id="1" tvg-name="ATV HD" tvg-logo="https://i.imgur.com/atv-logo.png" group-title="Perú",ATV HD
 http://181.189.244.252:8000/play/a032/index.m3u8
 
@@ -8,6 +8,9 @@ https://media2.streambrothers.com:19360/8028/8028.m3u8
 
 #EXTINF:-1 tvg-id="3" tvg-name="Latina" tvg-logo="https://i.imgur.com/latina-logo.png" group-title="Perú",Latina
 http://179.51.136.19:8000/play/a1as/index.m3u8
+
+#EXTINF:-1 tvg-id="Latina" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Latina_Television_-_Logotipo.png/125px-Latina_Television_-_Logotipo.png" group-title="Perú",Latina
+https://live-evg7.tv360.bitel.com.pe/bitel/latina_abr/bitel/latina_720p/chunks.m3u8
 
 #EXTINF:-1 tvg-id="4" tvg-name="America" tvg-logo="https://i.imgur.com/america-logo.png" group-title="Perú",America
 http://200.60.124.19:29000/play/a04r/index.m3u8
@@ -21,6 +24,7 @@ http://200.60.124.19:29000/play/a06s/index.m3u8
 #EXTINF:-1 tvg-id="7" tvg-name="RPP" tvg-logo="https://i.imgur.com/rpp-logo.png" group-title="Perú",RPP
 http://195.66.210.10:80/Rtr6yAJJqg/mEAp9xefv6/12893
 
+#Colombia
 #EXTINF:-1 tvg-id="8" tvg-name="Caracol HD" tvg-logo="https://i.imgur.com/caracol-logo.png" group-title="Colombia",Caracol HD
 http://181.78.14.26:8000/play/a00d
 
@@ -340,4 +344,5 @@ http://87.120.179.187:8000/play/a00v
 http://87.120.179.187:8000/play/a00w
 
 #EXTINF:-1 tvg-id="114" tvg-name="CITYRADIO" tvg-logo="https://i.imgur.com/cityradio-logo.png" group-title="Internacional",CITYRADIO
+
 http://87.120.179.187:8000/play/a001 
