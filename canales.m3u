@@ -156,7 +156,7 @@ https://live-evg25.tv360.bitel.com.pe/bitel/hoyperutv/chunks.m3u8
 #EXTINF:-1 tvg-id="BHTV.pe" tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2025/01/02/21/1735828211471/67c4d4fd8b8e_480_270.png" group-title="Peru",MEGA TV (PASCO)
 https://live-evg25.tv360.bitel.com.pe/bitel/megatv/chunks.m3u8
 
-#EXTINF:-1 tvg-id="BHTV.pe" tvg-logo="https://i.imgur.com/oNFOKFI.png" group-title="Peru",BHTV
+#EXTINF:tvg-logo="https://i.imgur.com/oNFOKFI.png" group-title="Peru",BHTV
 https://live-evg25.tv360.bitel.com.pe/bitel/bhtv/chunks.m3u8
 
 #EXTINF:0,AXN HD
@@ -1063,6 +1063,7 @@ http://87.120.179.187:8000/play/a00w
 #EXTINF:-1 tvg-id="114" tvg-name="CITYRADIO" tvg-logo="https://i.imgur.com/cityradio-logo.png" group-title="Internacional",CITYRADIO
 
 http://87.120.179.187:8000/play/a001 
+
 
 
 
