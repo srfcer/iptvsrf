@@ -33,6 +33,9 @@ https://live-evg25.tv360.bitel.com.pe/bitel/animakids/chunks.m3u8
 #EXTINF:-1 tvg-id="atv.pe" tvg-logo="https://i.imgur.com/eUzYZfg.png" group-title="Peru",ATV HD
 https://live-evg20.tv360.bitel.com.pe/bitel/Atv-UDP_abr/bitel/Atv-udp_720p/chunks.m3u8
 
+#EXTINF:-1 tvg-id="ATV.pe@SD",ATV
+https://alba-pe-atv-atv.stream.mediatiquestream.com/index.m3u8
+
 #EXTINF:-1 tvg-id="atv.pe" tvg-logo="https://www.atv.pe/wp-content/uploads/2023/03/logo_atvSur_naranja-1.png" group-title="Peru",ATV Sur (480p)
 https://d3r5ioyjqcy69v.cloudfront.net/original.m3u8
 
@@ -1063,6 +1066,7 @@ http://87.120.179.187:8000/play/a00w
 #EXTINF:-1 tvg-id="114" tvg-name="CITYRADIO" tvg-logo="https://i.imgur.com/cityradio-logo.png" group-title="Internacional",CITYRADIO
 
 http://87.120.179.187:8000/play/a001 
+
 
 
 
