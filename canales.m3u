@@ -12,6 +12,9 @@ http://200.60.124.19:29000/play/a04s/index.m3u8
 #EXTINF:-1 tvg-id="PanamericanaTV.pe" tvg-logo="https://i.imgur.com/uQhEDES.png" group-title="Peru", Panamericana
 https://live-evg18.tv360.bitel.com.pe/bitel/panamericana_abr/bitel/panamericana_720p/chunks.m3u8
 
+#EXTINF:-1 tvg-name="Panamericana TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/26/Panamericana_tv_2009.png" tvg-id="PanamericanaTV.pe" tvg-country="PE" group-title="Peru",Panamericana TV
+https://cdnhd.iblups.com/hls/ptv2.m3u8
+
 #EXTINF:-1 tvg-id="6" tvg-name="Willax TV" tvg-logo="https://i.imgur.com/willax-logo.png" group-title="Peru",Willax TV
 http://200.60.124.19:29000/play/a06s/index.m3u8
 
@@ -1231,6 +1234,7 @@ https://ott1.hdlatam.tv/live_abr/webtvVisionSur/playlist.m3u8
 https://live.obslivestream.com/vivatv/index.m3u8
 #EXTINF:-1 tvg-id="VNP.pe@SD" group-title="Peru03",VNP
 https://videoserver.tmcreativos.com:19360/visionnoticias/visionnoticias.m3u8
+
 
 
 
