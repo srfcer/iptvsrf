@@ -181,28 +181,14 @@ https://spi-filmstream-1-nl.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="France24Espanol.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8a/France24.png" group-title="Noticias",France 24 Español (720p)
 https://ythls.armelin.one/channel/UCUdOoVWuWmgo1wByzcsyKDQ.m3u8
 
-#EXTINF:-1 tvg-id="GaliciaTVAmerica.es" tvg-logo="https://i.imgur.com/VlWh3n6.png" group-title="Undefined",Galicia TV América (720p)
-https://europa-crtvg.flumotion.com/crtvg/europa_high/chunks.m3u8
-
-#EXTINF:-1 tvg-id="cxtvenvivo.com" tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/ad1ff26218bd5eae6959174fb296227b.webp  group-title="Undefined",Garage TV (480p)
-https://stream1.sersat.com/hls/garagetv.m3u8
 
 #EXTINF:-1 tvg-id="GeniosTV.pe" tvg-logo="https://i.imgur.com/iH2Lx6E.png" group-title="Peru",Genios TV (Moyobamba) (720p)
 https://live.obslivestream.com/geniostvmux/index.m3u8
 
-#EXTINF:-1 tvg-id="HispanTV.ir" tvg-logo="https://i.imgur.com/AfsVFfM.png" group-title="News",HispanTV (480p)
-https://live3.presstv.ir/hispantv/07.m3u8
-
-#EXTINF:-1 tvg-id="Hoynet.pe" tvg-logo="https://i.imgur.com/PqKlBq2.png" group-title="Undefined",Hoynet (360p)
-https://stmv.streamingvip.click/hoynet/hoynet/playlist.m3u8
-
-#EXTINF:-1 tvg-id="IdentidadTV.pe" tvg-logo="https://i.imgur.com/q5jxzr2.png" group-title="News",Identidad TV (720p)
-https://5c3fb01839654.streamlock.net:1963/iptvrci/livercitv/playlist.m3u8
-
 #EXTINF:-1 tvg-id="IntuitivaTV.pe" tvg-logo="https://i.imgur.com/zcehR4M.png" group-title="General",Intuitiva TV (720p)
 https://video2.lhdserver.es/cableperu/live.m3u8
 
-#EXTINF:-1 tvg-id="ImpactoTelevision.pe" tvg-logo="https://i.imgur.com/bkpCGP6.png" group-title="Undefined",Impacto Televisión (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="ImpactoTelevision.pe" tvg-logo="https://i.imgur.com/bkpCGP6.png" group-title="Peru",Impacto Televisión (360p)
 https://cloudvideo.servers10.com:8081/impactotv/index.m3u8
 
 #EXTINF:-1 tvg-id="JN19.pe" tvg-logo="https://i.imgur.com/dudxyqk.png" group-title="Religious",JN19 (720p)
@@ -226,20 +212,11 @@ https://stream.live.novotempo.com/tv/smil:tvnuevotiempo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="UnifeTV.pe" tvg-logo="https://i.imgur.com/lVpDLVU.png" group-title="Religious",Unife TV (720p)
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/acda902f73a646daac3fdc9dcddbc971/playlist.m3u8
 
-#EXTINF:-1 tvg-id="KanalDDrama.tr" tvg-logo="https://i.imgur.com/WIeZMKT.png" group-title="Series",Kanal D Drama (1080p)
+#EXTINF:-1 tvg-id="KanalDDrama.tr" tvg-logo="https://i.imgur.com/WIeZMKT.png" group-title="Peru",Kanal D Drama (1080p)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-samsungspain/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MegaTVArequipa.pe" tvg-logo="https://i.imgur.com/q34E9V4.png" group-title="Peru",Mega TV (Arequipa)
 https://mc.servidor.stream:19360/megatv/megatv.m3u8
-
-#EXTINF:-1 tvg-id="Millenium109FM.pe" tvg-logo="https://i.imgur.com/sfNL6Bv.png" group-title="Undefined",Millenium 109 FM (Lamas) (720p)
-https://videoserver.tmcreativos.com:19360/nqvnhujhrx/nqvnhujhrx.m3u8
-
-#EXTINF:-1 tvg-id="MINEDUIPTV1.pe" tvg-logo="https://i.imgur.com/14nHMat.png" group-title="Education",MINEDU IPTV 1 (320p)
-http://iptv.perueduca.pe:1935/canal1/canal11/playlist.m3u8
-
-#EXTINF:-1 tvg-id="MINEDUIPTV2.pe" tvg-logo="https://i.imgur.com/14nHMat.png" group-title="Education",MINEDU IPTV 2 (320p)
-http://iptv.perueduca.pe:1935/canal2/canal22/playlist.m3u8
 
 #EXTINF:-1 tvg-id="NativaTVSatipo.pe" tvg-logo="https://i.imgur.com/ScCAgGB.png" group-title="Peru",Nativa TV (Satipo)
 https://7.innovatestream.pe:19360/nativatv/nativatv.m3u8
@@ -271,9 +248,6 @@ http://vivo.paxtvmovil.org/out/v1/6657a374459f4821b404e16161c98588/playlist_1280
 #EXTINF:-1 tvg-id="PeruChannel.br" tvg-logo="https://i.imgur.com/01KEiEp.png" group-title="Peru",Perú Channel
 https://a.cdni.live/peruchanel/peruchanel/playlist.m3u8
 
-#EXTINF:-1 tvg-id="PlatziTV.es" tvg-logo="https://static.platzi.com/static/images/footer/logo.png" group-title="Education",Platzi TV (1080p)
-https://mdstrm.com/live-stream-playlist/629a63ae8df27c082901f78b.m3u8
-
 #EXTINF:-1 tvg-id="Primavera15.pe" tvg-logo="https://i.imgur.com/wsJ8Ag2.png" group-title="Peru",Primavera 15 (720p)
 https://stmv.streamingvip.click/primaveratv/primaveratv/playlist.m3u8
 
@@ -285,12 +259,6 @@ https://tv.portalexpress.es:3175/hybrid/play.m3u8
 
 #EXTINF:-1 tvg-id="RegionTVCallao.pe" tvg-logo="https://i.imgur.com/I4grcqk.png" group-title="Peru",Región TV (Callao) (480p)
 https://servilive.com:3757/live/regiontvlive.m3u8
-
-#EXTINF:-1 tvg-id="SolTV.pe" tvg-logo="https://i.imgur.com/GtNkuAc.png" group-title="Undefined",Sol Televisión
-http://190.211.140.89:8081/SVTranscoder/SOLTVabr.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Teleamazonas.pe" tvg-logo="https://i.imgur.com/yhv3XyU.png" group-title="Undefined",Teleamazonas
-https://live.tvcontrolcp.com:1936/8054/8054/playlist.m3u8
 
 #EXTINF:-1 tvg-id="TelecolorYurimaguas.pe" tvg-logo="https://i.imgur.com/Ug6XNIU.png" group-title="Peru",Telecolor (Yurimaguas) (720p)
 https://live.obslivestream.com/telecolormux/index.m3u8
@@ -373,18 +341,11 @@ https://vdo.grupolimalive.com:3194/live/maticestvlive.m3u8
 #EXTINF:-1 tvg-id="1190" tvg-name="Master Television" tvg-logo="https://cdn.m3u.cl/logo/1190_Master_Television.png" group-title="Peru", Master Television | PE
 https://tv.ondadigital.pe:1936/master/master/playlist.m3u8?PlaylistM
 
-#EXTINF:-1 tvg-id="NovaTVStar.pe" tvg-logo="https://i.imgur.com/CN2j8S3.png" group-title="Undefined",Nova TV Star (360p)
-https://7.innovatestream.pe:19360/radionovastar/radionovastar.m3u8
-
-
 #EXTINF:-1 tvg-id="RCNMas.co" tvg-logo="https://i.imgur.com/MJzuRAN.png" group-title="Entertainment",RCN Mas
 https://rcntv-rcnmas-1-us.roku.wurl.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="RCNXtra.co" tvg-logo="https://i.imgur.com/N7VH24E.png" group-title="Entertainment",RCN Xtra (1080p)
 https://latv-rcn-xtra-1-mx.tcl.wurl.tv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="RCR.pe" tvg-logo="https://i.imgur.com/A8TRPrF.png" group-title="News",Red de Comunicación Regional (RCR) (720p) 
-https://5c3fb01839654.streamlock.net:1963/iptvrcrperu/livercrperutv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="AnimeZoneTV.do" tvg-logo="https://i.imgur.com/fDlkOBx.png" group-title="Animation",Anime Zone TV
 https://stmv1.srvif.com/loadingtv/loadingtv/chunklist_w306583619.m3u8
@@ -395,22 +356,13 @@ https://6362ca6f1fc28.streamlock.net/8062/8062/playlist.m3u8
 #EXTINF:-1 tvg-id="PandamaxChannel.cl" tvg-logo="https://animax.lat/assets/img/pandalogo2.png" group-title="Animation",Pandamax Channel (1080p)
 https://stream.wifiexpert.cl/telenorte/pandamaxch/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TopCine.us" tvg-logo="https://i.imgur.com/DFEKx5N.png" group-title="Movies",Top Cine (1080p)
-https://olympusamagi.pc.cdn.bitgravity.com/TopCine-roku/master.m3u8
-
-#EXTINF:-1 tvg-id="ANDES TV" tvg-logo="https://www.radiosicuani.com/wp-content/uploads/2020/11/logo-tv.png" group-title="Movies",Andes TV
-https://stmv1.voxhdnet.com/tvsicuani/tvsicuani/chunklist_w2044646175.m3u8
-
 #EXTINF:-1 tvg-id="TuUniversoTV.co" tvg-logo="https://i.imgur.com/e6esjLZ.jpg" group-title="Religious",Tu Universo TV (720p)
 https://5bf8041cb3fed.streamlock.net/TUUNIVERSOTV/TUUNIVERSOTV/playlist.m3u8
 
-#EXTINF:-1 tvg-id="TVSRetro.gt" tvg-logo="https://i.imgur.com/jdnHci0.png" group-title="Classic",TVS Retro (720p)
+#EXTINF:-1 tvg-id="TVSRetro.gt" tvg-logo="https://i.imgur.com/jdnHci0.png" group-title="Peru",TVS Retro - Guatemala (720p)
 https://cdn.streamhispanatv.net:3531/live/tvsretrogtlive.m3u8
 
-#EXTINF:-1 tvg-id="LaRiberena.pe" tvg-logo="https://i.imgur.com/BOXIRBT.png" group-title="Undefined",La Ribereña Conectate + (480p)
-https://vdo.grupolimalive.com:3277/live/riberenatvlive.m3u8
-
-#EXTINF:-1 tvg-id="LaRiberena.pe" tvg-logo="https://i.imgur.com/BOXIRBT.png" group-title="Undefined",La Ribereña (Pucallpa) (480p)
+#EXTINF:-1 tvg-id="LaRiberena.pe" tvg-logo="https://i.imgur.com/BOXIRBT.png" group-title="Peru",La Ribereña (Pucallpa) (480p)
 https://cloudvideo.servers10.com:8081/8070/index.m3u8
 
 #EXTINF:-1 tvg-id="Wtv.pe" tvg-logo="https://i.imgur.com/V10iVeh.png" group-title="General",Wtv (720p)
@@ -419,17 +371,8 @@ https://live.obslivestream.com/wtv/index.m3u8
 #EXTINF:-1 tvg-id="OvacionTV.pe" tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2024/08/20/03/1724098142168/76e0e78082aa_480_270.jpg" group-title="Peru",Folklore TV
 https://live-evg18.tv360.bitel.com.pe/bitel/folkloretvSRT/chunks.m3u8
 
-#EXTINF:-1 tvg-id="RetroPlus3.cl" tvg-logo="https://i.imgur.com/i0rZsgG.png" group-title="Movies",Retro Plus 3 (720p)
-https://video06.logicahost.com.br/retroplussenal3/retroplussenal3/chunklist_w1062652673.m3u8
-
-#EXTINF:-1 tvg-id="Tevex.cl" tvg-logo="https://i.imgur.com/FnInQRd.png" group-title="Business",Tevex (720p) [Not 24/7]
-https://v4.tustreaming.cl/tevexinter/index.m3u8
-
-#EXTINF:-1 tvg-id="VINILOS TV" tvg-logo="https://i.imgur.com/X7cPyP2.png" group-title="Undefined",VINILOS TV TV HD
+#EXTINF:-1 tvg-id="VINILOS TV" tvg-logo="https://i.imgur.com/X7cPyP2.png" group-title="Peru",VINILOS TV TV HD
 https://live.obslivestream.com/controversiatv/index.m3u8
-
-#EXTINF:-1 tvg-id="RadioRutasdelPeru.es" tvg-logo="https://i.imgur.com/88Iyvm8.png" group-title="Travel",Radio Rutas del Perú SD
-https://stmv.streamingvip.click/rutasdelperutv/rutasdelperutv/chunklist_w2137045211.m3u8
 
 #EXTINF:-1 tvg-id="TVSistemasCuzco.pe" tvg-logo="https://i.imgur.com/yo1oTIh.png" group-title="General",TV Sistemas Cuzco (Cuzco) (360p)
 https://stmv1.voxhdnet.com/sistemascusco/sistemascusco/playlist.m3u8
@@ -554,8 +497,7 @@ https://videoserver.tmcreativos.com:19360/raditropical/raditropical.m3u8
 https://live.obslivestream.com/tvoriente/index.m3u8
 #EXTINF:-1 tvg-id="RadioTVTendencias.pe@SD" tvg-logo="https://i.imgur.com/tsdrrV9.png" group-title="Music",Radio TV Tendencias SD
 https://s1.tvdatta.com:3950/multi_web/play.m3u8
-#EXTINF:-1 tvg-id="RCR.pe@SD" tvg-logo="https://i.imgur.com/A8TRPrF.png" group-title="News",RCR SD
-https://5c3fb01839654.streamlock.net:1963/iptvrcrperu/livercrperutv/playlist.m3u8
+
 #EXTINF:-1 tvg-id="RegionTVCallao.pe@SD" tvg-logo="https://i.imgur.com/I4grcqk.png" group-title="Peru",Region TV Callao SD
 https://servilive.com:3757/live/regiontvlive.m3u8
 #EXTINF:-1 tvg-id="RNTelevision.pe@SD" tvg-logo="https://i.imgur.com/oFGiW7u.png" group-title="Peru",RN Television SD
@@ -621,6 +563,9 @@ https://live.obslivestream.com/vivatv/index.m3u8
 http://38.183.182.166:8000/play/a0zn/index.m3u8
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+############################################################ ENTRETENIMIENTO##########################################################
+
+
 
 ######################################################## DOCUMENTALES #################################################################
 
@@ -675,11 +620,6 @@ http://200.125.170.122:8000/play/a00l
 
 
 ###################################################### Series ###########################################################################
-#EXTINF:-1 tvg-id="48" tvg-name="TNT SERIES" tvg-logo="https://i.imgur.com/tnt-series-logo.png" group-title="Series",TNT SERIES
-http://179.51.136.19:8000/play/a1al/index.m3u8
-
-#EXTINF:-1 tvg-id="49" tvg-name="Universal TV" tvg-logo="https://i.imgur.com/universal-tv-logo.png" group-title="Series",Universal TV
-http://181.119.85.222:8000/play/a00x/index.m3u8
 
 ########################################################## Deportes ################################################################3333
 
@@ -739,6 +679,9 @@ https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 
 #EXTINF:-1 tvg-id="84" tvg-name="Racer" tvg-logo="https://i.imgur.com/racer-logo.png" group-title="Deportes",Racer
 https://amg00378-mavtv-amg00378c2-rakuten-us-1048.playouts.now.amagi.tv/playlist/amg00378-mavtvfast-motorsportsnetwork-rakutenus/playlist.m3u8
+
+#EXTINF:-1 tvg-id="cxtvenvivo.com" tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-m/ad1ff26218bd5eae6959174fb296227b.webp  group-title="Deportes",Garage TV (480p)
+https://stream1.sersat.com/hls/garagetv.m3u8
 
 ################################################# Musica ############################################################################
 
@@ -850,17 +793,9 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01602-themahqfrance-vivekanald-sams
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00500-studiocitypictu-mytimespanish-runtimees/playlist.m3u8
 
 ############################################################ Entretenimiento #################################################################
-#EXTINF:-1 tvg-id="99" tvg-name="Distrito Comedia" tvg-logo="https://i.imgur.com/distrito-comedia-logo.png" group-title="Entretenimiento",Distrito Comedia
-http://181.119.85.222:8000/play/a02f/index.m3u8
 
-#EXTINF:-1 tvg-id="100" tvg-name="FARRA PLAY" tvg-logo="https://i.imgur.com/farra-play-logo.png" group-title="Entretenimiento",FARRA PLAY
-http://159.203.148.226/live/farra.m3u8?PlaylistM3UCL
-
-#EXTINF:-1 tvg-id="101" tvg-name="MOVISTAR TV" tvg-logo="https://i.imgur.com/movistar-tv-logo.png" group-title="Entretenimiento",MOVISTAR TV
-http://179.51.136.19:8000/play/a1hu/index.m3u8
-
-#EXTINF:-1 tvg-id="102" tvg-name="13 MAX" tvg-logo="https://i.imgur.com/13max-logo.png" group-title="Entretenimiento",13 MAX
-http://coninfo.net:1935/13maxhd/live13maxtvnuevo/playlist.m3u8
+#EXTINF:-1 tvg-id="SolTV.pe" tvg-logo="https://i.imgur.com/GtNkuAc.png" group-title="Entretenimiento",Sol Televisión
+http://190.211.140.89:8081/SVTranscoder/SOLTVabr.stream/playlist.m3u8
 
 ############################################################ Internacional #####################################################################
 
@@ -940,6 +875,19 @@ https://cdnhd.iblups.com/hls/902c1a0395264f269f1160efa00660e47.m3u8
 
 #EXTINF:-1 tvg-id="VNP.pe@SD" tvg-logo="https://i.imgur.com/TOnknEW.png" group-title="Noticias",VNP SD
 https://videoserver.tmcreativos.com:19360/visionnoticias/visionnoticias.m3u8
+
+#EXTINF:-1 tvg-id="Millenium109FM.pe" tvg-logo="https://i.imgur.com/sfNL6Bv.png" group-title="Noticias",Millenium 109 FM (Lamas) (720p)
+https://videoserver.tmcreativos.com:19360/nqvnhujhrx/nqvnhujhrx.m3u8
+
+#EXTINF:-1 tvg-id="NovaTVStar.pe" tvg-logo="https://i.imgur.com/CN2j8S3.png" group-title="Noticias",Nova TV Star (360p)
+https://7.innovatestream.pe:19360/radionovastar/radionovastar.m3u8
+
+#EXTINF:-1 tvg-id="Tevex.cl" tvg-logo="https://i.imgur.com/FnInQRd.png" group-title="Noticias",Tevex - Chile (720p)
+https://v4.tustreaming.cl/tevexinter/index.m3u8
+
+############################################# Educacion #############################################################33
+#EXTINF:-1 tvg-id="PlatziTV.es" tvg-logo="https://static.platzi.com/static/images/footer/logo.png" group-title="Educacion",Platzi TV (1080p)
+https://mdstrm.com/live-stream-playlist/629a63ae8df27c082901f78b.m3u8
 
 http://87.120.179.187:8000/play/a001 
 
@@ -1107,6 +1055,7 @@ https://ott1.hdlatam.tv/live_abr/webtvVisionSur/playlist.m3u8
 https://live.obslivestream.com/vivatv/index.m3u8
 #EXTINF:-1 tvg-id="VNP.pe@SD" group-title="Peru03",VNP
 https://videoserver.tmcreativos.com:19360/visionnoticias/visionnoticias.m3u8
+
 
 
 
