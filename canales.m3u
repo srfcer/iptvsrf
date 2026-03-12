@@ -106,8 +106,8 @@ https://live-evg7.tv360.bitel.com.pe/bitel/soltv/chunks.m3u8
 #EXTINF:-1 tvg-id="telelima.pe" tvg-logo="https://www.telelima.pe/img/logoweb1.png" group-title="Peru",TELELIMA HD
 https://live-evg11.tv360.bitel.com.pe/bitel/telelimaSRT/chunks.m3u8
 
-#EXTINF:-1 tvg-id="telelima.pe" tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2025/01/15/05/1736895378330/a71e8fedf788_480_270.png" group-title="MUSICA",La Tele
-https://live-evg25.tv360.bitel.com.pe/bitel/latele/chunks.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/BDqtjX2.jpeg" group-title="Peru",27 | LA TELE |
+https://live-evg1.tv360.bitel.com.pe/bitel/latele/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Conecta2TV.pe" tvg-logo="https://i.imgur.com/cfHaLt2.png" group-title="Peru",Conecta2 TV (Lima)
 https://live-evg18.tv360.bitel.com.pe/bitel/conectado2/chunks.m3u8
@@ -117,9 +117,6 @@ https://live-evg18.tv360.bitel.com.pe/bitel/fmhmovies_abr/bitel/fmhmovies_720p/c
 
 #EXTINF:-1 tvg-id="moyobamba.com" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/LOGO_TOP_LATINO_PNG_2017_-_500px.png" group-title="Musica",TOP LATINO
 https://live-evg11.tv360.bitel.com.pe/bitel/toplatino/chunks.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/BDqtjX2.jpeg" group-title="TV PERU",27 | LA TELE |
-https://live-evg1.tv360.bitel.com.pe/bitel/latele/playlist.m3u8
 
 #EXTINF:-1 tvg-id="BHTV.pe" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvViJX_BK3Ez9Y5wnR7zjubeiQ2F9s1wcxQA&s" group-title="Peru",CTV TV
 https://live-evg18.tv360.bitel.com.pe/bitel/ctvSRT/chunks.m3u8
@@ -153,9 +150,6 @@ https://cdn.elsalvadordigital.com:1936/wowtv/smil:wowtv.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="AsiriTV.pe" tvg-logo="https://i.imgur.com/7bGVFBa.png" group-title="Peru",AsiriTV (Lima) (720p)
 https://video2.lhdserver.es/asiritv/live.m3u8
-
-#EXTINF:-1 tvg-id="CajamarcaTV.pe" tvg-logo="https://i.imgur.com/pC57NYv.png" group-title="Peru",Cajamarca TV (SD)
-https://ca2.inka.net.pe/cajamarcatv/index.m3u8
 
 #EXTINF:-1 tvg-id="viaaltomayotv.com" tvg-logo="https://www.viaaltomayotv.com/panel/archivos-panel/logotipo/Logo-c7e-355.png" group-title="Peru",VIA Alto Mayo (HD)
 https://live.obslivestream.com/viaaltomayomux/tracks-v1a1/mono.m3u8
@@ -1183,6 +1177,7 @@ https://ott1.hdlatam.tv/live_abr/webtvVisionSur/playlist.m3u8
 https://live.obslivestream.com/vivatv/index.m3u8
 #EXTINF:-1 tvg-id="VNP.pe@SD" group-title="Peru03",VNP
 https://videoserver.tmcreativos.com:19360/visionnoticias/visionnoticias.m3u8
+
 
 
 
