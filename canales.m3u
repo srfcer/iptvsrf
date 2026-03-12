@@ -1,5 +1,8 @@
 #EXTM3U
 #Peru
+#EXTINF:-1 group-title="Peru",Retro Palmares
+https://tna5.bozztv.com/tvretro1971/index.m3u8
+
 #EXTINF:-1 tvg-id="Latina" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Latina_Television_-_Logotipo.png/125px-Latina_Television_-_Logotipo.png" group-title="Peru",Latina
 https://live-evg7.tv360.bitel.com.pe/bitel/latina_abr/bitel/latina_720p/chunks.m3u8
 
@@ -1232,6 +1235,7 @@ https://ott1.hdlatam.tv/live_abr/webtvVisionSur/playlist.m3u8
 https://live.obslivestream.com/vivatv/index.m3u8
 #EXTINF:-1 tvg-id="VNP.pe@SD" group-title="Peru03",VNP
 https://videoserver.tmcreativos.com:19360/visionnoticias/visionnoticias.m3u8
+
 
 
 
