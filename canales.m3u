@@ -263,7 +263,6 @@ https://5c3fb01839654.streamlock.net:1963/iptvrcrperu/livercrperutv/chunklist_w2
 #EXTINF:-1 tvg-id="UnifeTV.pe" tvg-logo="https://i.imgur.com/lVpDLVU.png" group-title="Religious",Unifetv (720p)
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/98adedd6dec04a2d8663899b927f9383/chunklist_b4628000.m3u8?p=79&s=1679601004&e=1679601124&h=f16b1f6b81187b8536acaa4869edf8b7
 
-
 #EXTINF:-1 tvg-id="UranioTV.pe" tvg-logo="https://i.imgur.com/EeNpfIr.png" group-title="Peru",Uranio TV (Yurimaguas) (720p)
 https://live.obslivestream.com/uraniotv/index.m3u8
 
@@ -272,12 +271,6 @@ https://multimedia.tmcreativos.com:1936/viatelevision/viatelevision/playlist.m3u
 
 #EXTINF:-1 tvg-id="VisionSur.pe" tvg-logo="https://i.imgur.com/AbZYWEQ.png" group-title="Peru",VisionSur (Arequipa)
 https://ott1.hdlatam.tv/live_abr/webtvVisionSur/playlist.m3u8
-
-#EXTINF:-1 tvg-id="LimaLive.pe" tvg-logo="https://i.imgur.com/cVUmoKE.png" group-title="Peru",LimaLive (720p)
-#https://vdo.grupolimalive.com:3245/stream/play.m3u8
-
-#EXTINF:-1 tvg-id="1190" tvg-name="Master Television" tvg-logo="https://cdn.m3u.cl/logo/1190_Master_Television.png" group-title="Peru", Master Television | PE
-#https://tv.ondadigital.pe:1936/master/master/playlist.m3u8?PlaylistM
 
 #EXTINF:-1 tvg-id="RCNMas.co" tvg-logo="https://i.imgur.com/MJzuRAN.png" group-title="Entretenimiento",RCN Mas
 https://rcntv-rcnmas-1-us.roku.wurl.tv/playlist.m3u8
@@ -300,10 +293,7 @@ https://live-evg18.tv360.bitel.com.pe/bitel/folkloretvSRT/chunks.m3u8
 #EXTINF:-1 tvg-id="VINILOS TV" tvg-logo="https://i.imgur.com/X7cPyP2.png" group-title="Peru",VINILOS TV TV HD
 https://live.obslivestream.com/controversiatv/index.m3u8
 
-#EXTINF:-1 tvg-id="Telesistema" tvg-logo="https://i.imgur.com/5viHgRa.png" group-title="Peru",Telesistema
-#http://51.81.93.239:8084/hls/tsistemas.m3u8
-
-#EXTINF:-1 tvg-id="AngienetTV.pe@SD" tvg-logo="https://i.imgur.com/GCCriH4.png" group-title="Peru",Angienet TV SD - Colliqeu
+#EXTINF:-1 tvg-id="AngienetTV.pe@SD" tvg-logo="https://i.imgur.com/GCCriH4.png" group-title="Peru",Angienet TV SD - Collique
 https://servilive.com:3624/stream/play.m3u8
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -965,6 +955,7 @@ https://ott1.hdlatam.tv/live_abr/webtvVisionSur/playlist.m3u8
 https://live.obslivestream.com/vivatv/index.m3u8
 #EXTINF:-1 tvg-id="VNP.pe@SD" group-title="Peru03",VNP
 https://videoserver.tmcreativos.com:19360/visionnoticias/visionnoticias.m3u8
+
 
 
 
