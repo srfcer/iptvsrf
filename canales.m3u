@@ -7,8 +7,11 @@ https://live20.bozztv.com/akamaissh101/ssh101/tvretropalm2020/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/NvdxH5Y.jpeg" group-title="Peru", | RETRO TV ᴴᴰ |
 https://live20.bozztv.com/akamaissh101/ssh101/retrotvcr2025/chunks.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/4NMlwrm.jpeg" group-title="TV PERU",01 | WILLAX |
+#EXTINF:-1 tvg-logo="https://i.imgur.com/4NMlwrm.jpeg" group-title="Peru",01 | WILLAX |
 https://live-evg7.tv360.bitel.com.pe/bitel/willax_abr/bitel/willax_720p/chunks.m3u8
+
+#EXTINF:-1 tvg-id="6" tvg-name="Willax TV" tvg-logo="https://i.imgur.com/willax-logo.png" group-title="Peru",Willax TV
+http://200.60.124.19:29000/play/a06s/index.m3u8
 
 #EXTINF:-1 tvg-id="Latina" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Latina_Television_-_Logotipo.png/125px-Latina_Television_-_Logotipo.png" group-title="Peru",Latina
 https://live-evg7.tv360.bitel.com.pe/bitel/latina_abr/bitel/latina_720p/chunks.m3u8
@@ -31,9 +34,6 @@ https://cdnhd.iblups.com/hls/ptv2.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/8dElUGL.jpeg" group-title="Peru",05 | PANAMERICANA TV ᴴᴰ |
 https://live-evg20.tv360.bitel.com.pe/un2Y4TBV-OmQxxN5fz7TIg/1773323007/bitel/Panamericana-UDP_abr/bitel/Panamericana-udp_480p/chunks.m3u8
 
-#EXTINF:-1 tvg-id="6" tvg-name="Willax TV" tvg-logo="https://i.imgur.com/willax-logo.png" group-title="Peru",Willax TV
-http://200.60.124.19:29000/play/a06s/index.m3u8
-
 #EXTINF:-1 tvg-id="7" tvg-name="RPP" tvg-logo="https://i.imgur.com/rpp-logo.png" group-title="Peru",RPP
 http://195.66.210.10:80/Rtr6yAJJqg/mEAp9xefv6/12893
 
@@ -43,8 +43,20 @@ https://live-evg25.tv360.bitel.com.pe/bitel/agro/chunks.m3u8
 #EXTINF:-1 tvg-id="Folklore" tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2025/01/02/21/1735829866944/618b506a875b_480_270.jpg" group-title="Peru",Folklore TV
 https://live-evg18.tv360.bitel.com.pe/bitel/folkloretvSRT/chunks.m3u8
 
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jesaro15/iptv/main/images/TVPERU.jpg" group-title="TV PERU",07 | TV PERU |
+https://cdnhd.iblups.com/hls/777b4d4cc0984575a7d14f6ee57dbcaf7.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jesaro15/iptv/main/images/TVPerúNoticias.jpg" group-title="TV PERU",7.1 | TV PERU NOTICIAS |
+https://cdnhd.iblups.com/hls/902c1a0395264f269f1160efa00660e47.m3u8
+
+#EXTINF:-1 tvg-logo="http://imgfz.com/i/uPxIGZb.jpeg" group-title="TV PERU",7.2 | CANAL IPe ᴴᴰ |
+https://cdnhd.iblups.com/hls/3f2cb1658d114f2693eff18d83199e677.m3u8
+
 #EXTINF:-1 tvg-id="TVNoticias73.pe" tvg-logo="https://yt3.ggpht.com/-TT4fesr5OEU/AAAAAAAAAAI/AAAAAAAAAAA/bcrXYkOAjdA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" group-title="Peru",TV Noticias 7.3 (480p)
 https://live-evg20.tv360.bitel.com.pe/bitel/TVPeru-UDP_abr/bitel/TVPeru-udp_720p/chunks.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/bInzVde.jpeg" group-title="TV PERU",7.3 | JNE TV |
+https://live20.bozztv.com/akamaissh101/ssh101/jnetv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="Peru | anime" tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2025/06/30/22/1751295673567/6fb8c332464c_480_270.png" group-title="Kids",Anima Kids
 https://live-evg25.tv360.bitel.com.pe/bitel/animakids/chunks.m3u8
@@ -1245,6 +1257,7 @@ https://ott1.hdlatam.tv/live_abr/webtvVisionSur/playlist.m3u8
 https://live.obslivestream.com/vivatv/index.m3u8
 #EXTINF:-1 tvg-id="VNP.pe@SD" group-title="Peru03",VNP
 https://videoserver.tmcreativos.com:19360/visionnoticias/visionnoticias.m3u8
+
 
 
 
