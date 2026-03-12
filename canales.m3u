@@ -154,12 +154,6 @@ https://cdn.elsalvadordigital.com:1936/wowtv/smil:wowtv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AsiriTV.pe" tvg-logo="https://i.imgur.com/7bGVFBa.png" group-title="Peru",AsiriTV (Lima) (720p)
 https://video2.lhdserver.es/asiritv/live.m3u8
 
-#EXTINF:-1 tvg-id="TVBellaAsuncion.pe" tvg-logo="https://i.imgur.com/H69eLFW.png" group-title="Undefined",Bella Asuncion TV (720p)
-https://tvdatta.com:3602/stream/play.m3u8
-
-#EXTINF:-1 tvg-id="CadenaTV.pe" tvg-logo="https://i.imgur.com/stvzqzd.png" group-title="Undefined",Cadena TV
-https://servilive.com:3079/live/cdnatvlive.m3u8
-
 #EXTINF:-1 tvg-id="CajamarcaTV.pe" tvg-logo="https://i.imgur.com/pC57NYv.png" group-title="Peru",Cajamarca TV (SD)
 https://ca2.inka.net.pe/cajamarcatv/index.m3u8
 
@@ -1189,6 +1183,7 @@ https://ott1.hdlatam.tv/live_abr/webtvVisionSur/playlist.m3u8
 https://live.obslivestream.com/vivatv/index.m3u8
 #EXTINF:-1 tvg-id="VNP.pe@SD" group-title="Peru03",VNP
 https://videoserver.tmcreativos.com:19360/visionnoticias/visionnoticias.m3u8
+
 
 
 
