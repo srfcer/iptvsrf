@@ -3,6 +3,9 @@
 #EXTINF:-1 tvg-logo="https://i.imgur.com/sf3GT8N.jpeg" group-title="Peru", | RETRO PALMARES TV |
 https://live20.bozztv.com/akamaissh101/ssh101/tvretropalm2020/chunks.m3u8
 
+#EXTINF:-1 tvg-logo="https://i.imgur.com/NvdxH5Y.jpeg" group-title="Peru", | RETRO TV ᴴᴰ |
+https://live20.bozztv.com/akamaissh101/ssh101/retrotvcr2025/chunks.m3u8
+
 #EXTINF:-1 tvg-id="Latina" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Latina_Television_-_Logotipo.png/125px-Latina_Television_-_Logotipo.png" group-title="Peru",Latina
 https://live-evg7.tv360.bitel.com.pe/bitel/latina_abr/bitel/latina_720p/chunks.m3u8
 
@@ -12,11 +15,11 @@ https://live-evg20.tv360.bitel.com.pe/bitel/America-UDP_abr/bitel/America-udp_72
 #EXTINF:-1 tvg-id="5" tvg-name="Panamericana" tvg-logo="https://i.imgur.com/panamericana-logo.png" group-title="Peru",Panamericana
 http://200.60.124.19:29000/play/a04s/index.m3u8
 
-#EXTINF:-1 tvg-id="PanamericanaTV.pe" tvg-logo="https://i.imgur.com/uQhEDES.png" group-title="Peru", Panamericana
-https://live-evg18.tv360.bitel.com.pe/bitel/panamericana_abr/bitel/panamericana_720p/chunks.m3u8
-
 #EXTINF:-1 tvg-name="Panamericana TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/26/Panamericana_tv_2009.png" tvg-id="PanamericanaTV.pe" tvg-country="PE" group-title="Peru",Panamericana TV
 https://cdnhd.iblups.com/hls/ptv2.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/8dElUGL.jpeg" group-title="Peru",05 | PANAMERICANA TV ᴴᴰ |
+https://live-evg20.tv360.bitel.com.pe/un2Y4TBV-OmQxxN5fz7TIg/1773323007/bitel/Panamericana-UDP_abr/bitel/Panamericana-udp_480p/chunks.m3u8
 
 #EXTINF:-1 tvg-id="6" tvg-name="Willax TV" tvg-logo="https://i.imgur.com/willax-logo.png" group-title="Peru",Willax TV
 http://200.60.124.19:29000/play/a06s/index.m3u8
@@ -1235,6 +1238,7 @@ https://ott1.hdlatam.tv/live_abr/webtvVisionSur/playlist.m3u8
 https://live.obslivestream.com/vivatv/index.m3u8
 #EXTINF:-1 tvg-id="VNP.pe@SD" group-title="Peru03",VNP
 https://videoserver.tmcreativos.com:19360/visionnoticias/visionnoticias.m3u8
+
 
 
 
