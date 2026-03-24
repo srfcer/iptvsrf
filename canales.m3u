@@ -23,7 +23,7 @@ https://mitv.getstreamhosting.com:1936/live/live/chunklist_w1917734841.m3u8
 https://live20.bozztv.com/giatv/giatv-RTVN/RTVN/chunks.m3u8
 
 #EXTINF:-1 tvg-logo="https://gia.tv/streams/logo/209552.png" group-title="Peru",| OnTv |
-https://live20.bozztv.com/giatv/giatv-Ontv/Ontv/chunks.m3u
+https://live20.bozztv.com/giatv/giatv-Ontv/Ontv/chunks.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3922-294x165-FFFFFF.jpg" group-title="Peru", |RETRO X PLUS| 
 https://tvservices.fullhd-streaming.com:3100/live/tvgroupretroxtvpluslive.m3u8
