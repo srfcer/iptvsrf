@@ -4,6 +4,9 @@
 #EXTM3U
 #Peru
 
+#EXTINF:-1 tvg-logo="https://taltaltv.net/logostv/LOGOTV.jpg" group-title="Peru",TALTALTV.NET (Series)
+https://live20.bozztv.com/giatv/giatv-TALTALTVANIMACION/TALTALTVANIMACION/chunks.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.ibb.co/pjsGq3RM/in35.png" group-title="Peru",| Cine35mm |
 https://live20.bozztv.com/giatv/giatv-live35mm/live35mm/playlist.m3u8
 
@@ -27,6 +30,9 @@ https://live20.bozztv.com/giatv/giatv-Ontv/Ontv/chunks.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3922-294x165-FFFFFF.jpg" group-title="Peru", |RETRO X PLUS| 
 https://tvservices.fullhd-streaming.com:3100/live/tvgroupretroxtvpluslive.m3u8
+
+#EXTINF:-1 tvg-logo="https://video.freetv.com/themes/custom/oly/freetv/logo.png" group-title="Peru",FREETV ACCION
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-topcinelatam-ono/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/4NMlwrm.jpeg" group-title="Peru",01 | WILLAX |
 https://live-evg7.tv360.bitel.com.pe/bitel/willax_abr/bitel/willax_720p/chunks.m3u8
