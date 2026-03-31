@@ -315,8 +315,9 @@ https://live.obslivestream.com/controversiatv/index.m3u8
 #EXTINF:-1 tvg-id="AngienetTV.pe@SD" tvg-logo="https://i.imgur.com/GCCriH4.png" group-title="Peru",Angienet TV SD - Collique
 https://servilive.com:3624/stream/play.m3u8
 
-#EXTINF:-1 tvg-id="Telesistema11.do@SD" tvg-logo="https://i.imgur.com/ZzeZKCu.png" group-title="Peru",Telesistema 11 (480p)
-http://200.125.170.122:8000/play/a0ci/index.m3u8
+#EXTINF:-1 tvg-id="Telesistema11.do@SD" tvg-logo="https://i.imgur.com/ZzeZKCu.png" group-title="Peru",Telesistema 11 
+https://live2.eu-north-1b.cf.dmcdn.net/sec2(XEiUToYal-9Mn1Ie-6kdHP78TgIemq3CjnOwLQ3zt7M0f-g7T0Nx6Dzzbd3z3fgtyQ9W3CJGIAN3pIRCVsa08tYAmvtSKxoAmen__SxwKyFkuMd0ImYEsSUnnzE-BF4r)/cloud/3/x80ac48/d/live-720.m3u8
+
 
 ##################################################### PERU 02############################################################################333333333
 
