@@ -326,31 +326,28 @@ https://s4.tvdatta.com:3450/live/tvenlinealive.m3u8
 #EXTINF:-1 tvg-logo="https://emisorasgt.com/wp-content/uploads/2023/04/canal-100-chinique.webp"  group-title="Peru", Chinique TV | GT
 https://183.bozztv.com/giatv/giatv-chinique100tvenvivo/chinique100tvenvivo/playlist.m3u8
 
-#EXTINF:-1 group-title="Peru", Universo TV | 
-https://183.bozztv.com/giatv/giatv-universotv/universotv/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_nMC32ZQ1qHhU1hhV1VMzzTBnTFPf4Y8T8QRA4eEl3jeQ=s160-c-k-c0x00ffffff-no-rj" group-title="Peru", Jino TV | NI
 https://183.bozztv.com/giatv/giatv-jinotvenvivo/jinotvenvivo/playlist.m3u8
 
-#EXTINF:-1 group-title="Peru", Tele Guarico | 
+#EXTINF:-1 group-title="Peru" tvg-logo="https://tse1.mm.bing.net/th/id/OIP.xFyy0NuDop9w_QrVXGtZTwHaGJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", Tele Guarico | 
 https://183.bozztv.com/giatv/giatv-teleguarico123/teleguarico123/playlist.m3u8
 
-#EXTINF:-1 group-title="Peru", Mega TV | Pe
+#EXTINF:-1 group-title="Peru"  tvg-logo="https://tse1.mm.bing.net/th/id/OIP.mTS2V9rlUSHOwCJheVyudQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3", Mega TV | Pe
 https://183.bozztv.com/giatv/giatv-megatv/megatv/playlist.m3u8
 
 #EXTINF:-1 group-title="Peru", TVU Pando |
 https://183.bozztv.com/giatv/giatv-tvupandopro/tvupandopro/playlist.m3u8
 
-#EXTINF:-1 group-title="Peru", Retro Magico |
+#EXTINF:-1 group-title="Peru" tvg-logo="https://th.bing.com/th/id/OIP.9FxAMBt6lOnIhabJ0W6rrgAAAA?w=170&h=180&c=7&r=0&o=7&pid=1.7&rm=3", Retro Magico |
 https://183.bozztv.com/giatv/giatv-retromagicochnl/retromagicochnl/playlist.m3u8
 
-#EXTINF:-1 group-title="Peru", Guaymate TV |
+#EXTINF:-1 group-title="Peru"  tvg-logo="https://tvinsur.com/wp-content/uploads/2025/09/Guaymate-TV-republica-dominicana.webp", Guaymate TV | RP
 https://live20.bozztv.com/akamaissh101/ssh101/guaymatetv/playlist.m3u8
 
-#EXTINF:-1 group-title="Peru", SilTV | Guatemala
+#EXTINF:-1 group-title="Peru" tvg-logo="https://emisorasgt.com/wp-content/uploads/2025/11/sil-tv-suchitepequez-en-vivo.webp", SilTV | Guatemala
 https://live20.bozztv.com/giatv/giatv-SilTvOnline/SilTvOnline/playlist.m3u8
 
-#EXTINF:-1 group-title="Peru", El Lider TV Online | 
+#EXTINF:-1 group-title="Peru" tvg-logo="https://i.pinimg.com/originals/d0/75/e0/d075e04242243c392d051313d19a2f2b.jpg", El Lider TV Online | 
 https://5f700d5b2c46f.streamlock.net/ellidertvonline/ellidertvonline/playlist.m3u8
 
 #EXTINF:-1 group-title="Peru", Milenium TV | 
@@ -373,7 +370,7 @@ https://alfa.betheltv.tv/srt/3_abr/playlist.m3u8
 #EXTINF:-1 tvg-id="BHTV.pe@SD" tvg-logo="https://i.imgur.com/oNFOKFI.png" group-title="Peru",BHTV SD
 https://sc1.wasidata.com/Bhtv/index.fmp4.m3u8
 
-#EXTINF:-1 tvg-id="CadenaTV.pe@HD" tvg-logo="https://i.imgur.com/stvzqzd.png" group-title="Peru",Cadena TV HD
+#EXTINF:-1 tvg-id="CadenaTV.pe@HD" tvg-logo="https://www.cadenatv.com.pe/wp-content/uploads/2019/11/28579934_1845911755481020_1619509742_o.png" group-title="Peru",Cadena TV HD
 https://tv.bitstreaming.net:3789/live/cdntvlive.m3u8
 
 #EXTINF:-1 tvg-id="Canal8Catacaos.pe@SD" tvg-logo="https://i.imgur.com/O5MrFjY.png" group-title="Peru",Canal 8 Catacaos SD
