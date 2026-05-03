@@ -349,6 +349,12 @@ https://live20.bozztv.com/akamaissh101/ssh101/guaymatetv/playlist.m3u8
 
 #EXTINF:-1 group-title="Peru", SilTV | Guatemala
 https://live20.bozztv.com/giatv/giatv-SilTvOnline/SilTvOnline/playlist.m3u8
+
+#EXTINF:-1 group-title="Peru", El Lider TV Online | 
+https://5f700d5b2c46f.streamlock.net/ellidertvonline/ellidertvonline/playlist.m3u8
+
+#EXTINF:-1 group-title="Peru", Milenium TV | 
+https://live20.bozztv.com/giatv/giatv-mileniumtv/mileniumtv/playlist.m3u8
 ##################################################### PERU 02############################################################################333333333
 
 #EXTINF:-1 tvg-id="AntaresTelevision.pe@SD" tvg-logo="https://i.imgur.com/05gwtk2.png" group-title="Entertainment",Antares Television SD
