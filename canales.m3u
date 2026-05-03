@@ -314,16 +314,41 @@ https://servilive.com:3624/stream/play.m3u8
 #EXTINF:-1 tvg-id="1290" tvg-name="Palmeras TV" tvg-logo="https://cdn.m3u.cl/logo/1290_Palmeras_TV.png" group-title="Peru", Palmeras TV | PE
 https://play.agenciastreaming.com:8081/palmerastv/index.m3u8
 
-#EXTINF:-1 tvg-id="1686" tvg-name="San Pedro SAT" tvg-logo="https://cdn.m3u.cl/logo/1686_San_Pedro_SAT.png", San Pedro SAT | PE
+#EXTINF:-1 tvg-id="1686" tvg-name="San Pedro SAT" tvg-logo="https://cdn.m3u.cl/logo/1686_San_Pedro_SAT.png" group-title="Peru", San Pedro SAT | PE
 https://eu1.servers10.com:8081/8156/index.m3u8
 
-#EXTINF:-1 tvg-id="1187" tvg-name="Sanjuanera TV" tvg-logo="https://cdn.m3u.cl/logo/1187_Sanjuanera_TV.png", Sanjuanera TV | PE
+#EXTINF:-1 tvg-id="1187" tvg-name="Sanjuanera TV" tvg-logo="https://cdn.m3u.cl/logo/1187_Sanjuanera_TV.png" group-title="Peru", Sanjuanera TV | PE
 https://infosmartpe.store:5443/LiveApp/streams/3zc2BXi5SEys2310139330128741.m3u8
 
-#EXTINF:-1 tvg-id="1590" tvg-name="TV en linea Cusco" tvg-logo="https://cdn.m3u.cl/logo/1590_TV_en_linea_Cusco.png", TV en linea Cusco | PE
+#EXTINF:-1 tvg-id="1590" tvg-name="TV en linea Cusco" tvg-logo="https://cdn.m3u.cl/logo/1590_TV_en_linea_Cusco.png" group-title="Peru", TV en linea Cusco | PE
 https://s4.tvdatta.com:3450/live/tvenlinealive.m3u8
 
+#EXTINF:-1 group-title="Peru", Chinique TV | 
+https://183.bozztv.com/giatv/giatv-chinique100tvenvivo/chinique100tvenvivo/playlist.m3u8
 
+#EXTINF:-1 group-title="Peru", Universo TV | 
+https://183.bozztv.com/giatv/giatv-universotv/universotv/playlist.m3u8
+
+#EXTINF:-1 group-title="Peru", Jino TV | 
+https://183.bozztv.com/giatv/giatv-jinotvenvivo/jinotvenvivo/playlist.m3u8
+
+#EXTINF:-1 group-title="Peru", Tele Guarico | 
+https://183.bozztv.com/giatv/giatv-teleguarico123/teleguarico123/playlist.m3u8
+
+#EXTINF:-1 group-title="Peru", Mega TV | Pe
+https://183.bozztv.com/giatv/giatv-megatv/megatv/playlist.m3u8
+
+#EXTINF:-1 group-title="Peru", TVU Pando |
+https://183.bozztv.com/giatv/giatv-tvupandopro/tvupandopro/playlist.m3u8
+
+#EXTINF:-1 group-title="Peru", Retro Magico |
+https://183.bozztv.com/giatv/giatv-retromagicochnl/retromagicochnl/playlist.m3u8
+
+#EXTINF:-1 group-title="Peru", Guaymate TV |
+https://live20.bozztv.com/akamaissh101/ssh101/guaymatetv/playlist.m3u8
+
+#EXTINF:-1 group-title="Peru", SilTV | Guatemala
+https://live20.bozztv.com/giatv/giatv-SilTvOnline/SilTvOnline/playlist.m3u8
 ##################################################### PERU 02############################################################################333333333
 
 #EXTINF:-1 tvg-id="AntaresTelevision.pe@SD" tvg-logo="https://i.imgur.com/05gwtk2.png" group-title="Entertainment",Antares Television SD
