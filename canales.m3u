@@ -35,8 +35,8 @@ https://live20.bozztv.com/giatv/giatv-Ontv/Ontv/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3922-294x165-FFFFFF.jpg" group-title="Peru", |RETRO X PLUS| 
 https://tvservices.fullhd-streaming.com:3100/live/tvgroupretroxtvpluslive.m3u8
 
-#EXTINF:-1 tvg-logo="https://video.freetv.com/themes/custom/oly/freetv/logo.png" group-title="Peru",FREETV ACCION
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01024-olympusat-topcinelatam-ono/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://gia.tv/images/m3u-default.png" group-title="Peru",PANTALLA CLASICA (SERIES)
+https://live20.bozztv.com/akamaissh101/ssh101/pantallaclasics/chunks.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/4NMlwrm.jpeg" group-title="Peru",01 | WILLAX |
 https://live-evg7.tv360.bitel.com.pe/bitel/willax_abr/bitel/willax_720p/chunks.m3u8
@@ -132,7 +132,7 @@ https://live-evg18.tv360.bitel.com.pe/bitel/conectado2/chunks.m3u8
 https://live-evg18.tv360.bitel.com.pe/bitel/ctvSRT/chunks.m3u8
 
 #EXTINF:-1 tvg-id="BHTV.pe" tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2025/01/02/21/1735827865864/904bb001a557_640_360.png" group-title="Peru",SUMAC TV
-https://live-evg7.tv360.bitel.com.pe/bitel/sumactv/chunks.m3u8
+#https://live-evg7.tv360.bitel.com.pe/bitel/sumactv/chunks.m3u8
 
 #EXTINF:-1 tvg-id="OvacionTV.pe" tvg-logo="https://i.imgur.com/7Xndgxk.png" group-title="Peru",Ovacion TV
 https://live-evg7.tv360.bitel.com.pe/bitel/ovaciontv_ori/chunks.m3u8
@@ -416,9 +416,6 @@ https://ott1.hdlatam.tv/live_abr/webtvTarapotoPe/playlist.m3u8
 #EXTINF:-1 tvg-id="TopTV.pe@SD" tvg-logo="https://i.imgur.com/tiNvihZ.png" group-title="Peru",Top TV SD
 https://tvdatta.com:3084/live/toptvaguaytialive.m3u8
 
-#EXTINF:-1 tvg-id="Trivu.pe@SD" tvg-logo="https://i.imgur.com/QrUYjOS.png" group-title="Peru",Trivu SD
-https://www.chasquirouter.com/salida/sd/trivu.m3u8
-
 #EXTINF:-1 tvg-id="TVPeruInternacional.pe@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/TV_Per%C3%BA_Internacional_2019_-_copia.png/512px-TV_Per%C3%BA_Internacional_2019_-_copia.png" group-title="Peru",TV Peru Internacional SD
 #EXTVLCOPT:http-referrer=https://www.tvperu.gob.pe/internacional
 #https://cdnhd.iblups.com/hls/ee2450c81e554f4cae0e6292106993c27.m3u8
@@ -452,13 +449,10 @@ https://live.obslivestream.com/vivatv/index.m3u8
 #EXTINF:-1 tvg-logo="https://revolviendolaradio.cl/wp-content/uploads/2024/01/Mesa-de-trabajo-1.png" group-title="PER_SRF_CHNLS",REVOLVIENDO LA RADIO (Musica)
 https://live20.bozztv.com/giatv/giatv-revolviendolaradio/revolviendolaradio/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://gia.tv/images/m3u-default.png" group-title="PER_SRF_CHNLS",PANTALLA CLASICA (SERIES)
-https://live20.bozztv.com/akamaissh101/ssh101/pantallaclasics/chunks.m3u8
-
-#EXTINF:-1 tvg-logo="https://gia.tv/images/m3u-default.png" group-title="PER_SRF_CHNLS",CIUDAD MAGICA (peliculas) (Series)
+#EXTINF:-1 tvg-logo="https://gia.tv/images/m3u-default.png" group-title="Peru",CIUDAD MAGICA (peliculas) (Series)
 https://live20.bozztv.com/akamaissh101/ssh101/verycoolfgr/chunks.m3u8
 
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/U73kFg4Qya85ClsrZ0r8z4srpmZ2xb_85TlGjSwNnJvYdqcGVCkVL2KmQtK0heLnCMo=w240-h480-rw" group-title="PER_SRF_CHNLS",RETRO PLUS 3 (Musica)
+#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/U73kFg4Qya85ClsrZ0r8z4srpmZ2xb_85TlGjSwNnJvYdqcGVCkVL2KmQtK0heLnCMo=w240-h480-rw" group-title="Peru",RETRO PLUS 3 (Musica)
 https://tls-cl.cdnz.cl/retroplustvtres/live/playlist.m3u8?PlaylistM3UCL
 
 #EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/7DRaDczy1zOuBcLdixMRf_NAxAFq6BuNJ1OQdlmN-nuSWfGYj_phTEpa_PiFqHxMRF_-=w240-h480-rw" group-title="PER_SRF_CHNLS",SONY ACCION
@@ -467,7 +461,7 @@ https://de9yx47crxs6l.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/7DRaDczy1zOuBcLdixMRf_NAxAFq6BuNJ1OQdlmN-nuSWfGYj_phTEpa_PiFqHxMRF_-=w240-h480-rw" group-title="PER_SRF_CHNLS",SONY THRILLER
 https://d1wuti7vf6eqt9.cloudfront.net/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/7DRaDczy1zOuBcLdixMRf_NAxAFq6BuNJ1OQdlmN-nuSWfGYj_phTEpa_PiFqHxMRF_-=w240-h480-rw" group-title="PER_SRF_CHNLS",SONY EXISTOS
+#EXTINF:-1 tvg-logo="https://play-lh.googleusercontent.com/7DRaDczy1zOuBcLdixMRf_NAxAFq6BuNJ1OQdlmN-nuSWfGYj_phTEpa_PiFqHxMRF_-=w240-h480-rw" group-title="PER_SRF_CHNLS",SONY EXITOS
 https://d1hcj42s7cseno.cloudfront.net/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/521_Recuerdos_Retro_Radio_TV.png" group-title="PER_SRF_CHNLS",Recuerdos Retro Radio TV (Musica)
@@ -500,7 +494,7 @@ https://59ef525c24caa.streamlock.net/telebrunca/telebrunca/chunklist_w413125513.
 #EXTINF:-1 tvg-logo="https://s3-mspro.nyc3.cdn.digitaloceanspaces.com/tenant/62ed6e625a88e7000951ac98/mediaLibrary/photo/2e324b2a-7bc2-4eee-bba3-958741c0962e-extra-large-standard-q100.png" group-title="PER_SRF_CHNLS",TV Quellón (regional) (chile)
 https://pantera1-100gb-cl-movistar.dps.live/tvquellon/tvquellon.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1706_Central_TV.png" group-title="PER_SRF_CHNLS",Central TV (Series) (Chile)
+#EXTINF:-1 tvg-logo="https://cdn.m3u.cl/logo/1706_Central_TV.png" group-title="Peru",Central TV (Series) (Chile)
 https://freya.mivideo.pro/centraltv/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://gia.tv/images/m3u-default.png" group-title="PER_SRF_CHNLS",Voice Over Radio TV (regional) (chile)
@@ -509,7 +503,7 @@ https://tvservices.fullhd-streaming.com:3941/multi_web/play_480.m3u8
 #EXTINF:-1 tvg-logo="https://www.meganetfun.com/storage/channel-logos/QgwDHIf31p28XVtZmO8w7PnHWkbuQ5rWyg8Cmv0Q.png" group-title="PER_SRF_CHNLS",Megahits HD
 https://video20.klm99.com:3395/live/meganethitslive.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn.imgbin.com/8/22/21/imgbin-el-chavo-del-ocho-logo-sitcom-television-show-comedy-others-cfmV7MN0y8ijg47aNWgmgWrD1.jpg" group-title="PER_SRF_CHNLS",EL CHAVO DEL 8  (Adolescente)
+#EXTINF:-1 tvg-logo="https://cdn.imgbin.com/8/22/21/imgbin-el-chavo-del-ocho-logo-sitcom-television-show-comedy-others-cfmV7MN0y8ijg47aNWgmgWrD1.jpg" group-title="Peru",EL CHAVO DEL 8  (Adolescente)
 https://live20.bozztv.com/giatvplayout7/giatv-208870/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://gia.tv/images/m3u-default.png" group-title="PER_SRF_CHNLS",LMS CHANEL (Adolescente)
@@ -518,7 +512,7 @@ https://live20.bozztv.com/akamaissh101/ssh101/canallms/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://gia.tv/images/m3u-default.png" group-title="PER_SRF_CHNLS",ABAJO DE LA LINEA TV
 https://5ff3d9babae13.streamlock.net/ynfpncxxjg/ynfpncxxjg/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1dMJh582uegH2pvIzK7JFZBqpEFJJl3tn86xFU5d6qyKo_93zu1SimNybTlmiB49uU4yNdYQzyyrItSvgJSE0X8qhT2lDkr_guWxWUAZe8HqwoEVA0rCCq7Gw6Eiocw06v_yrCX5j_1k/s1600/cooltext322362673602554.png" group-title="PER_SRF_CHNLS",TIGUERITOS (Adolescente)
+#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1dMJh582uegH2pvIzK7JFZBqpEFJJl3tn86xFU5d6qyKo_93zu1SimNybTlmiB49uU4yNdYQzyyrItSvgJSE0X8qhT2lDkr_guWxWUAZe8HqwoEVA0rCCq7Gw6Eiocw06v_yrCX5j_1k/s1600/cooltext322362673602554.png" group-title="Peru",TIGUERITOS (Adolescente)
 https://ss2.tvrdomi.com:1936/tigueritostv/tigueritostv/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://serenotv.com/wp-content/uploads/2025/05/canal-retro-magico-150x84.jpg" group-title="PER_SRF_CHNLS",RETRO MAGICO TV (Adolescente)
@@ -904,13 +898,13 @@ https://d2qsan2ut81n2k.cloudfront.net/live/77eece7f-8de5-4406-9f7e-7be16d81f2ce/
 #EXTINF:-1 tvg-id="ATVPlus.pe@SD" group-title="Peru03",ATV+ [Not 24/7]
 #EXTVLCOPT:http-referrer=https://www.atv.pe/
 https://alba-pe-atv-atvmas.stream.mediatiquestream.com/index.m3u8
-#EXTINF:-1 tvg-id="AutenticaTelevision.pe@SD" group-title="Peru03",Auténtica Televisión (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AutenticaTelevision.pe@SD" group-title="Peru",Auténtica Televisión (720p) [Not 24/7]
 https://live.obslivestream.com/autenticatvmux/index.m3u8
 #EXTINF:-1 tvg-id="BethelTV.pe@SD" group-title="Peru03",Bethel TV
 https://alfa.betheltv.tv/srt/3_abr/playlist.m3u8
 #EXTINF:-1 tvg-id="BHTV.pe@SD" group-title="Peru03",BHTV (1080p)
 https://sc1.wasidata.com/Bhtv/index.fmp4.m3u8
-#EXTINF:-1 tvg-id="CadenaTV.pe@HD" group-title="Peru03",Cadena TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CadenaTV.pe@HD" group-title="Peru",Cadena TV (720p) [Not 24/7]
 https://tv.bitstreaming.net:3789/live/cdntvlive.m3u8
 #EXTINF:-1 tvg-id="Canal8Catacaos.pe@SD" group-title="Peru03",Canal 8 Catacaos (720p) [Not 24/7]
 https://live.obslivestream.com/canal8/index.m3u8
@@ -1048,42 +1042,4 @@ https://ott1.hdlatam.tv/live_abr/webtvVisionSur/playlist.m3u8
 https://live.obslivestream.com/vivatv/index.m3u8
 #EXTINF:-1 tvg-id="VNP.pe@SD" group-title="Peru03",VNP
 https://videoserver.tmcreativos.com:19360/visionnoticias/visionnoticias.m3u8
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
