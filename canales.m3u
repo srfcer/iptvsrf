@@ -311,6 +311,18 @@ https://live.obslivestream.com/controversiatv/index.m3u8
 #EXTINF:-1 tvg-id="AngienetTV.pe@SD" tvg-logo="https://i.imgur.com/GCCriH4.png" group-title="Peru",Angienet TV SD - Collique
 https://servilive.com:3624/stream/play.m3u8
 
+#EXTINF:-1 tvg-id="1290" tvg-name="Palmeras TV" tvg-logo="https://cdn.m3u.cl/logo/1290_Palmeras_TV.png" group-title="Peru", Palmeras TV | PE
+https://play.agenciastreaming.com:8081/palmerastv/index.m3u8
+
+#EXTINF:-1 tvg-id="1686" tvg-name="San Pedro SAT" tvg-logo="https://cdn.m3u.cl/logo/1686_San_Pedro_SAT.png", San Pedro SAT | PE
+https://eu1.servers10.com:8081/8156/index.m3u8
+
+#EXTINF:-1 tvg-id="1187" tvg-name="Sanjuanera TV" tvg-logo="https://cdn.m3u.cl/logo/1187_Sanjuanera_TV.png", Sanjuanera TV | PE
+https://infosmartpe.store:5443/LiveApp/streams/3zc2BXi5SEys2310139330128741.m3u8
+
+#EXTINF:-1 tvg-id="1590" tvg-name="TV en linea Cusco" tvg-logo="https://cdn.m3u.cl/logo/1590_TV_en_linea_Cusco.png", TV en linea Cusco | PE
+https://s4.tvdatta.com:3450/live/tvenlinealive.m3u8
+
 
 ##################################################### PERU 02############################################################################333333333
 
