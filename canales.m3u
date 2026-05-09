@@ -69,7 +69,7 @@ https://jireh-1-hls-video-pe-isp.dps.live/hls-video/567ffde3fa319fadf3419efda256
 #https://live-evg25.tv360.bitel.com.pe/bitel/agro/chunks.m3u8
 
 #EXTINF:-1 tvg-id="Folklore" tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2025/01/02/21/1735829866944/618b506a875b_480_270.jpg" group-title="Peru",Folklore TV
-https://live-evg18.tv360.bitel.com.pe/bitel/folkloretvSRT/chunks.m3u8
+https://play.folkloretv.pe/StreamSD/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jesaro15/iptv/main/images/TVPERU.jpg" group-title="Peru",07 | TV PERU |
 #https://cdnhd.iblups.com/hls/777b4d4cc0984575a7d14f6ee57dbcaf7.m3u8
