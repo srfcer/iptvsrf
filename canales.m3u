@@ -429,7 +429,8 @@ https://5c3fb01839654.streamlock.net:1963/iptvantares/liveantarestv/playlist.m3u
 https://live-evg18.tv360.bitel.com.pe/bitel/cnctvSRT/chunks.m3u8
 
 #EXTINF:-1 tvg-id="AntaresTelevision.pe@SD" tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2025/07/31/05/1753913034440/d26fc2cd3b6f_480_270.jpg" group-title="Peru",Mi Pelicula
-https://live-evg5.tv360.bitel.com.pe/bitel/mipeliculaSRT/chunks.m3u
+https://live-evg5.tv360.bitel.com.pe/bitel/mipeliculaSRT/chunks.m3u8
+
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ##############################################################SRF_CANALES##############################################################3
 #EXTINF:-1 tvg-logo="https://revolviendolaradio.cl/wp-content/uploads/2024/01/Mesa-de-trabajo-1.png" group-title="PER_SRF_CHNLS",REVOLVIENDO LA RADIO (Musica)
