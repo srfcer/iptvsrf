@@ -287,6 +287,9 @@ https://live-evg11.tv360.bitel.com.pe/bitel/tvmarSRT/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://tvonline.com.do/wp-content/uploads/2021/06/telesistema-canal-11-en-vivo-online.png" group-title="Peru",Telesistema |
 https://live2.eu-north-1a.cf.dmcdn.net/sec2(j47xu9S2Z8Yf3sbZOi9QiQfnhkOJPNjRvA3kJ45T9ncoAQ2kQD8rjBpynNVpRpx3ZN5L6NySm2BLvcDGEUQS-kxzj8WLe_ks8rMhVgXkiV8Qxn_6bjwQQJpMF8Rju_Vr)/cloud/3/x80ac48/d/live-720.m3u8
 
+#EXTINF:-1 tvg-logo="https://grupovierci.brightspotcdn.com/dims4/default/8587445/2147483647/strip/true/crop/1777x1777+0+0/resize/500x500!/quality/90/?url=https:%2F%2Fk2-prod-grupo-vierci.s3.us-east-1.amazonaws.com%2Fbrightspot%2F0e%2Fb6%2F257502f9436b86d576eb823654f6%2Flogo-tf.png" group-title="Peru",Telefuturo |
+https://rds3tf.desdeparaguay.net/telefuturo/telefuturo_int_baja/chunklist_w798695946.m3u8
+
 ##################################################### PERU 02############################################################################333333333
 
 #EXTINF:-1 tvg-id="AutenticaTelevision.pe@SD" tvg-logo="https://i.imgur.com/bEJK3RN.png" group-title="Peru",Autentica Television SD
