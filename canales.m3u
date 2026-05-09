@@ -428,6 +428,8 @@ https://5c3fb01839654.streamlock.net:1963/iptvantares/liveantarestv/playlist.m3u
 #EXTINF:-1 tvg-id="AntaresTelevision.pe@SD" tvg-logo="https://imgs.search.brave.com/aoMR4XeLYxwHAFOt79jNAV3JbSyEE_jyt2kf1kNNpKM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/Y29vbHN0cmVhbWlu/Zy51cy9pbWcvY2gv/aW1hZ2U0NzM5NzA0/MzM3MC5qcGc" group-title="Peru",CNC HD
 https://live-evg18.tv360.bitel.com.pe/bitel/cnctvSRT/chunks.m3u8
 
+#EXTINF:-1 tvg-id="AntaresTelevision.pe@SD" tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2025/07/31/05/1753913034440/d26fc2cd3b6f_480_270.jpg" group-title="Peru",Mi Pelicula
+https://live-evg5.tv360.bitel.com.pe/bitel/mipeliculaSRT/chunks.m3u
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ##############################################################SRF_CANALES##############################################################3
 #EXTINF:-1 tvg-logo="https://revolviendolaradio.cl/wp-content/uploads/2024/01/Mesa-de-trabajo-1.png" group-title="PER_SRF_CHNLS",REVOLVIENDO LA RADIO (Musica)
