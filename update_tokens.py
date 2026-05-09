@@ -41,6 +41,17 @@ for url in urls_objetivo:
             nuevo_contenido = nuevo_contenido.replace(url, nueva_url)
 
 # Si hubo cambios, subir archivo actualizado
+
+r = requests.get(url_api, headers=headers)
+data = r.json()
+
+if "sha" not in data:
+    print("❌ Error al obtener el archivo:", data)
+    exit(1)
+
+sha = data["sha"]
+
+
 if nuevo_contenido != contenido:
     encoded_content = base64.b64encode(nuevo_contenido.encode()).decode()
     payload = {
