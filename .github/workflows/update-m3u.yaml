@@ -25,7 +25,7 @@ jobs:
 
       - name: Ejecutar script de actualización
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ghp_w52qFuytZHfQLesFRemSnwL8z3XlTU }}
         run: |
           python update_tokens.py
 
