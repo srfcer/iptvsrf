@@ -1,87 +1,134 @@
-import os
 import requests
 import base64
 import re
-import sys
+import os
 
-# Configuración: usamos el GITHUB_TOKEN automático
-token = os.getenv("GITHUB_TOKEN")
-repo = "srfcer/iptvsrf"
-path = "canales.m3u"
-url_api = f"https://api.github.com/repos/{repo}/contents/{path}"
+# CONFIG
+TOKEN = os.getenv("GITHUB_TOKEN")
+REPO = "srfcer/iptvsrf"
+PATH = "canales.m3u"
 
-# URLs a vigilar
-urls_objetivo = [
-    "https://live-evg20.tv360.bitel.com.pe/Bah3sYEeFjSg7iF4I_K3kA/1778376747/bitel/America-udp/bitel/America-udp_1080p/chunks.m3u8",
-    "https://live-evg20.tv360.bitel.com.pe/L3GEuiSeNitng3XoMDrDsQ/1778377722/bitel/Panamericana-UDP_abr/bitel/Panamericana-udp_720p/chunks.m3u8",
-    "https://live2.eu-north-1a.cf.dmcdn.net/sec2(j47xu9S2Z8Yf3sbZOi9QiQfnhkOJPNjRvA3kJ45T9ncoAQ2kQD8rjBpynNVpRpx3ZN5L6NySm2BLvcDGEUQS-kxzj8WLe_ks8rMhVgXkiV8Qxn_6bjwQQJpMF8Rju_Vr)/cloud/3/x80ac48/d/live-720.m3u8"
-]
+API = f"https://api.github.com/repos/{REPO}/contents/{PATH}"
+HEADERS = {"Authorization": f"token {TOKEN}"}
 
-patterns = {
-    "bitel": r"tv360\.bitel\.com\.pe/([^/]+/[^/]+)/bitel",
-    "dmcdn": r"sec2\(([^)]+)\)"
-}
 
-# Obtener contenido actual del archivo en GitHub
-headers = {"Authorization": f"token {token}"}
-r = requests.get(url_api, headers=headers)
+# ✅ EXTRAER CANAL
+def get_channel(url):
+    m = re.search(r"/bitel/([^/]+)/bitel", url)
+    if m:
+        return m.group(1)
 
-if r.status_code != 200:
-    print(f"❌ Error al obtener el archivo desde GitHub. Código: {r.status_code}")
-    print("Respuesta:", r.text)
-    sys.exit(1)
+    if "dmcdn.net" in url:
+        return "dmcdn"
 
-data = r.json()
-if "sha" not in data or "content" not in data:
-    print("❌ La respuesta de la API no contiene el archivo esperado.")
-    print("Respuesta:", data)
-    sys.exit(1)
+    return None
 
-sha = data["sha"]
-contenido = base64.b64decode(data["content"]).decode()
-nuevo_contenido = contenido
 
-# Revisar cada URL
-for url in urls_objetivo:
-    if "bitel.com.pe" in url:
-        match = re.search(patterns["bitel"], url)
-    elif "dmcdn.net" in url:
-        match = re.search(patterns["dmcdn"], url)
-    else:
-        match = None
+# ✅ INTENTAR REFRESCAR TOKEN (REAL)
+def refresh_url(url):
+    try:
+        r = requests.get(url, timeout=5, allow_redirects=True)
+        if r.status_code == 200:
+            return url  # sigue vigente
+    except:
+        pass
 
-    if match:
-        token_actual = match.group(1)
-        # Aquí deberías obtener el token nuevo desde la fuente original
-        nuevo_token = token_actual  # simulado
-        if nuevo_token != token_actual:
-            if "bitel.com.pe" in url:
-                fixed_part = url.split("/bitel/", 1)[1]
-                nueva_url = f"https://live-evg20.tv360.bitel.com.pe/{nuevo_token}/bitel/{fixed_part}"
-            else:
-                fixed_part = url.split(")/", 1)[1]
-                nueva_url = f"https://live2.eu-north-1a.cf.dmcdn.net/sec2({nuevo_token})/{fixed_part}"
-            nuevo_contenido = nuevo_contenido.replace(url, nueva_url)
-            print(f"🔄 Token actualizado en: {url}")
+    return None  # muerto → se debe reemplazar
+
+
+# ✅ BUSCAR TOKEN NUEVO DESDE FUENTE REAL
+def buscar_nuevas_urls():
+    fuentes = [
+        # 👉 AGREGA AQUÍ fuentes reales (muy importante)
+        "https://iptv-org.github.io/iptv/languages/spa.m3u",
+        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/pe.m3u"
+    ]
+
+    resultado = []
+
+    for fuente in fuentes:
+        try:
+            txt = requests.get(fuente, timeout=10).text
+            urls = re.findall(r"https?://[^\s]+\.m3u8", txt)
+            resultado.extend(urls)
+        except:
+            continue
+
+    return resultado
+
+
+# ✅ OBTENER M3U ACTUAL
+def get_m3u():
+    r = requests.get(API, headers=HEADERS)
+    data = r.json()
+    contenido = base64.b64decode(data["content"]).decode()
+    return contenido, data["sha"]
+
+
+# ✅ ACTUALIZAR
+def actualizar(contenido, nuevas_urls):
+    lineas = contenido.splitlines()
+
+    nuevas_lineas = []
+
+    for linea in lineas:
+        if linea.startswith("http"):
+
+            canal_actual = get_channel(linea)
+
+            # 1️⃣ verificar si sigue vivo
+            url_ok = refresh_url(linea)
+
+            if url_ok:
+                nuevas_lineas.append(linea)
+                continue
+
+            # 2️⃣ buscar reemplazo
+            reemplazado = False
+
+            for nueva in nuevas_urls:
+                canal_nuevo = get_channel(nueva)
+
+                if canal_actual and canal_actual == canal_nuevo:
+                    print(f"🔄 Reemplazado: {canal_actual}")
+                    nuevas_lineas.append(nueva)
+                    reemplazado = True
+                    break
+
+            if not reemplazado:
+                nuevas_lineas.append(linea)
+
         else:
-            print(f"✅ Token sin cambios en: {url}")
-    else:
-        print(f"⚠️ No se encontró token en: {url}")
+            nuevas_lineas.append(linea)
 
-# Si hubo cambios, subir archivo actualizado
-if nuevo_contenido != contenido:
-    encoded_content = base64.b64encode(nuevo_contenido.encode()).decode()
+    return "\n".join(nuevas_lineas)
+
+
+# ✅ SUBIR A GITHUB
+def upload(contenido, sha):
+    encoded = base64.b64encode(contenido.encode()).decode()
+
     payload = {
-        "message": "Actualización automática de tokens en canales.m3u",
-        "content": encoded_content,
+        "message": "Auto update tokens IPTV",
+        "content": encoded,
         "sha": sha
     }
-    res = requests.put(url_api, headers=headers, json=payload)
 
-    if res.status_code in (200, 201):
-        print("✅ Archivo actualizado correctamente en GitHub.")
-    else:
-        print(f"❌ Error al actualizar el archivo. Código: {res.status_code}")
-        print("Respuesta:", res.text)
+    r = requests.put(API, headers=HEADERS, json=payload)
+    print("GitHub:", r.status_code)
+
+
+# MAIN
+contenido, sha = get_m3u()
+
+print("🔎 Buscando nuevas URLs...")
+nuevas_urls = buscar_nuevas_urls()
+
+nuevo = actualizar(contenido, nuevas_urls)
+
+if nuevo != contenido:
+    print("🚀 Subiendo cambios...")
+    upload(nuevo, sha)
 else:
-    print("ℹ️ No hubo cambios en los tokens, no se actualizó el archivo.")
+    print("✅ Nada que actualizar")
+``
