@@ -353,6 +353,18 @@ https://live20.bozztv.com/giatv/giatv-mileniumtv/mileniumtv/playlist.m3u8
 #EXTINF:-1 group-title="Peru", 11 TV Digital | 
 https://183.bozztv.com/giatv/giatv-ojodigital/ojodigital/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2026/02/12/03/1770842577740/0b3323f6ab86_480_270.png" group-title="Peru", Charapa TV | 
+https://live-evg10.tv360.bitel.com.pe/bitel/charapatv/chunks.m3u8
+
+#EXTINF:-1 tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2026/03/31/06/1774914040862/d123fa364824_480_270.png" group-title="Peru", RTV Total | 
+https://live-evg8.tv360.bitel.com.pe/bitel/totaltv/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2026/01/06/04/1767647925198/61855627a413_480_270.png" group-title="Peru",FMH Movies |
+https://live-evg18.tv360.bitel.com.pe/bitel/fmhmovies_abr/bitel/fmhmovies_720p/chunks.m3u8
+
+#EXTINF:-1 tvg-logo="https://img-evg3.tv360.bitel.com.pe/peru-image/2026/01/06/03/176764455212/e4e59097e633_480_270.png" group-title="Peru",TV Mar |
+https://live-evg11.tv360.bitel.com.pe/bitel/tvmarSRT/chunks.m3u8
+
 ##################################################### PERU 02############################################################################333333333
 
 #EXTINF:-1 tvg-id="AntaresTelevision.pe@SD" tvg-logo="https://i.imgur.com/05gwtk2.png" group-title="Entertainment",Antares Television SD
@@ -484,6 +496,7 @@ https://ott1.hdlatam.tv/live_abr/webtvVisionSur/playlist.m3u8
 
 #EXTINF:-1 tvg-id="VivaTVYurimaguas.pe@SD" tvg-logo="https://i.imgur.com/GkSoxhx.png" group-title="Peru",Viva TV Yurimaguas SD
 https://live.obslivestream.com/vivatv/index.m3u8
+
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ##############################################################SRF_CANALES##############################################################3
