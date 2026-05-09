@@ -8,13 +8,15 @@ on:
 jobs:
   update-m3u:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # Permite que GITHUB_TOKEN tenga acceso de escritura al repo
 
     steps:
       - name: Checkout del repositorio
-        uses: actions/checkout@v4   # actualizado a v4
+        uses: actions/checkout@v4
 
       - name: Configurar Python
-        uses: actions/setup-python@v5   # actualizado a v5
+        uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
@@ -29,13 +31,6 @@ jobs:
         run: |
           python update_tokens.py
 
-      - name: Commit y push de cambios
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add canales.m3u
-          git commit -m "Actualización automática de tokens en canales.m3u" || echo "No hay cambios"
-          git push
 
 
    
