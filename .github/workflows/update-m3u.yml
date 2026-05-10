@@ -2,14 +2,15 @@ name: Actualizar canales.m3u
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 * * * *"   # cada hora
   workflow_dispatch:
+
+permissions:
+  contents: write   # ✅ NECESARIO para actualizar el repo
 
 jobs:
   update-m3u:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout del repositorio
@@ -18,7 +19,7 @@ jobs:
       - name: Configurar Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.14'
+          python-version: '3.11'   # ✅ 3.14 aún no es estable en Actions
 
       - name: Instalar dependencias
         run: |
@@ -29,4 +30,6 @@ jobs:
         run: playwright install --with-deps
 
       - name: Ejecutar script update_tokens.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # ✅ CLAVE
         run: python update_tokens.py
