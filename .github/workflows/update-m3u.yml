@@ -22,9 +22,10 @@ jobs:
 
       - name: Instalar dependencias
         run: |
+          playwright install --with-deps
           python -m pip install --upgrade pip
           pip install requests
-          pip install playwright
+          playwright install
 
       - name: Ejecutar script de actualización
         env:
