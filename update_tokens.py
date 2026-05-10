@@ -1,134 +1,145 @@
+from playwright.sync_api import sync_playwright
 import requests
 import base64
 import re
+import time
 import os
 
+# ==============================
 # CONFIG
-TOKEN = os.getenv("GITHUB_TOKEN")
+# ==============================
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 REPO = "srfcer/iptvsrf"
 PATH = "canales.m3u"
 
-API = f"https://api.github.com/repos/{REPO}/contents/{PATH}"
-HEADERS = {"Authorization": f"token {TOKEN}"}
+API_URL = f"https://api.github.com/repos/{REPO}/contents/{PATH}"
+HEADERS = {"Authorization": f"token {GITHUB_TOKEN}"}
+
+stream_detectado = None
 
 
-# ✅ EXTRAER CANAL
-def get_channel(url):
-    m = re.search(r"/bitel/([^/]+)/bitel", url)
-    if m:
-        return m.group(1)
+# ==============================
+# DETECTAR STREAM
+# ==============================
+def es_stream(url):
+    return "live-" in url and "m3u8" in url and "dmcdn.net" in url
 
-    if "dmcdn.net" in url:
-        return "dmcdn"
+
+def convertir_a_720(url):
+    return re.sub(r'live-\d+', 'live-720', url)
+
+
+def obtener_stream():
+    global stream_detectado
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+
+        def handle_request(request):
+            global stream_detectado
+            url = request.url
+
+            if es_stream(url) and stream_detectado is None:
+                stream_detectado = url
+                print("🎯 Detectado:", url)
+
+        page.on("request", handle_request)
+
+        print("🔎 Abriendo página...")
+        page.goto("https://panamericana.pe/tvenvivo")
+
+        time.sleep(10)
+
+        browser.close()
+
+    if stream_detectado:
+        return convertir_a_720(stream_detectado)
 
     return None
 
 
-# ✅ INTENTAR REFRESCAR TOKEN (REAL)
-def refresh_url(url):
-    try:
-        r = requests.get(url, timeout=5, allow_redirects=True)
-        if r.status_code == 200:
-            return url  # sigue vigente
-    except:
-        pass
-
-    return None  # muerto → se debe reemplazar
-
-
-# ✅ BUSCAR TOKEN NUEVO DESDE FUENTE REAL
-def buscar_nuevas_urls():
-    fuentes = [
-        # 👉 AGREGA AQUÍ fuentes reales (muy importante)
-        "https://iptv-org.github.io/iptv/languages/spa.m3u",
-        "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/pe.m3u"
-    ]
-
-    resultado = []
-
-    for fuente in fuentes:
-        try:
-            txt = requests.get(fuente, timeout=10).text
-            urls = re.findall(r"https?://[^\s]+\.m3u8", txt)
-            resultado.extend(urls)
-        except:
-            continue
-
-    return resultado
-
-
-# ✅ OBTENER M3U ACTUAL
-def get_m3u():
-    r = requests.get(API, headers=HEADERS)
+# ==============================
+# GITHUB
+# ==============================
+def obtener_m3u():
+    r = requests.get(API_URL, headers=HEADERS)
     data = r.json()
+
+    if "content" not in data:
+        print(data)
+        raise Exception("Error leyendo GitHub")
+
     contenido = base64.b64decode(data["content"]).decode()
     return contenido, data["sha"]
 
 
-# ✅ ACTUALIZAR
-def actualizar(contenido, nuevas_urls):
-    lineas = contenido.splitlines()
-
-    nuevas_lineas = []
-
-    for linea in lineas:
-        if linea.startswith("http"):
-
-            canal_actual = get_channel(linea)
-
-            # 1️⃣ verificar si sigue vivo
-            url_ok = refresh_url(linea)
-
-            if url_ok:
-                nuevas_lineas.append(linea)
-                continue
-
-            # 2️⃣ buscar reemplazo
-            reemplazado = False
-
-            for nueva in nuevas_urls:
-                canal_nuevo = get_channel(nueva)
-
-                if canal_actual and canal_actual == canal_nuevo:
-                    print(f"🔄 Reemplazado: {canal_actual}")
-                    nuevas_lineas.append(nueva)
-                    reemplazado = True
-                    break
-
-            if not reemplazado:
-                nuevas_lineas.append(linea)
-
-        else:
-            nuevas_lineas.append(linea)
-
-    return "\n".join(nuevas_lineas)
-
-
-# ✅ SUBIR A GITHUB
-def upload(contenido, sha):
+def subir(contenido, sha):
     encoded = base64.b64encode(contenido.encode()).decode()
 
     payload = {
-        "message": "Auto update tokens IPTV",
+        "message": "Update Panamericana token",
         "content": encoded,
         "sha": sha
     }
 
-    r = requests.put(API, headers=HEADERS, json=payload)
-    print("GitHub:", r.status_code)
+    r = requests.put(API_URL, headers=HEADERS, json=payload)
+
+    print("✅ GitHub:", r.status_code)
 
 
+# ==============================
+# ACTUALIZAR M3U
+# ==============================
+def actualizar_m3u(contenido, nueva_url):
+
+    lineas = contenido.splitlines()
+
+    for i, linea in enumerate(lineas):
+
+        if 'tvg-id="PanamericanaTkns"' in linea:
+
+            print("✅ Canal encontrado")
+
+            if i + 1 < len(lineas):
+
+                actual_url = lineas[i + 1].strip()
+
+                print("➡️ URL actual:", actual_url)
+                print("➡️ URL nueva :", nueva_url)
+
+                if actual_url == nueva_url:
+                    print("✅ No hay cambios")
+                    return contenido, False
+
+                else:
+                    print("🔄 Actualizando URL...")
+                    lineas[i + 1] = nueva_url
+                    return "\n".join(lineas), True
+
+    print("⚠️ No se encontró el canal")
+    return contenido, False
+
+
+# ==============================
 # MAIN
-contenido, sha = get_m3u()
+# ==============================
+if __name__ == "__main__":
 
-print("🔎 Buscando nuevas URLs...")
-nuevas_urls = buscar_nuevas_urls()
+    nueva_url = obtener_stream()
 
-nuevo = actualizar(contenido, nuevas_urls)
+    if not nueva_url:
+        print("❌ No se detectó stream")
+        exit()
 
-if nuevo != contenido:
-    print("🚀 Subiendo cambios...")
-    upload(nuevo, sha)
-else:
-    print("✅ Nada que actualizar")
-``
+    print("\n🎯 URL FINAL:", nueva_url)
+
+    contenido, sha = obtener_m3u()
+
+    nuevo_contenido, cambio = actualizar_m3u(contenido, nueva_url)
+
+    if cambio:
+        print("\n🚀 Subiendo cambios...")
+        subir(nuevo_contenido, sha)
+    else:
+        print("\n✅ Nada que actualizar")
