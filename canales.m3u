@@ -66,8 +66,11 @@ https://live20.bozztv.com/akamaissh101/ssh101/tctvhn/chunks.m3u8
 #EXTINF:-1 tvg-id="abctelevision" tvg-logo="" group-title="Peru", ABC Television
 https://live-evg8.tv360.bitel.com.pe/bitel/abctelevisionSRT/chunks.m3u8
 
-#EXTINF:-1 tvg-id="bestclasicos" tvg-logo="" group-title="Peru", Best Clasicos
+#EXTINF:-1 tvg-id="bestclasicos" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3896-320x180-000000.jpg" group-title="Peru", Best Clasicos
 https://acceso.mediosdecostarica.com:3873/hybrid/play.m3u8
+
+#EXTINF:-1 tvg-id="oxitvcanal36" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3801-320x180-000000.jpg" group-title="Peru", Oxi Tv
+https://streamunoapp.com:3520/live/oxitvcanal36live.m3u8
 
 #EXTINF:-1 tvg-id="Latina" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Latina_Television_-_Logotipo.png/125px-Latina_Television_-_Logotipo.png" group-title="Peru",Latina
 https://live-evg7.tv360.bitel.com.pe/bitel/latina_abr/bitel/latina_720p/chunks.m3u8
