@@ -62,6 +62,9 @@ https://live20.bozztv.com/akamaissh101/ssh101/plaaytv/chunks.m3u8
 #EXTINF:-1 tvg-id="tvcreativahonduras" tvg-logo="" group-title="Peru", Tv Creativa Honduras
 https://live20.bozztv.com/akamaissh101/ssh101/tctvhn/chunks.m3u8
 
+#EXTINF:-1 tvg-id="abctelevision" tvg-logo="" group-title="Peru", ABC Television
+https://live-evg8.tv360.bitel.com.pe/bitel/abctelevisionSRT/chunks.m3u8
+
 #EXTINF:-1 tvg-id="Latina" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Latina_Television_-_Logotipo.png/125px-Latina_Television_-_Logotipo.png" group-title="Peru",Latina
 https://live-evg7.tv360.bitel.com.pe/bitel/latina_abr/bitel/latina_720p/chunks.m3u8
 
