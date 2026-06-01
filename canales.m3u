@@ -1,6 +1,7 @@
 #https://github.com/jesaro15/iptv/blob/main/play.m3u ---- Fuente
 #https://gia.tv/streams/208643.m3u --- retro
 #https://gia.tv/streams/208260.m3u --- otro
+#https://www.vivalivetv.com/channel_guide
 
 #EXTM3U
 #Peru
@@ -33,7 +34,7 @@ https://lbgo.bozztv.com/ssh101/ssh101/retyroxtv/chunks.m3u8
 https://live20.bozztv.com/giatv/giatv-Ontv/Ontv/chunks.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3922-294x165-FFFFFF.jpg" group-title="Peru", |RETRO X PLUS| 
-https://tvservices.fullhd-streaming.com:3100/live/tvgroupretroxtvpluslive.m3u8
+https://lbgo.bozztv.com/ssh101/ssh101/retp/chunks.m3u8
 
 #EXTINF:-1 tvg-logo="https://gia.tv/images/m3u-default.png" group-title="Peru",PANTALLA CLASICA (SERIES)
 https://live20.bozztv.com/akamaissh101/ssh101/pantallaclasics/chunks.m3u8
@@ -64,6 +65,9 @@ https://live20.bozztv.com/akamaissh101/ssh101/tctvhn/chunks.m3u8
 
 #EXTINF:-1 tvg-id="abctelevision" tvg-logo="" group-title="Peru", ABC Television
 https://live-evg8.tv360.bitel.com.pe/bitel/abctelevisionSRT/chunks.m3u8
+
+#EXTINF:-1 tvg-id="bestclasicos" tvg-logo="" group-title="Peru", Best Clasicos
+https://acceso.mediosdecostarica.com:3873/hybrid/play.m3u8
 
 #EXTINF:-1 tvg-id="Latina" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Latina_Television_-_Logotipo.png/125px-Latina_Television_-_Logotipo.png" group-title="Peru",Latina
 https://live-evg7.tv360.bitel.com.pe/bitel/latina_abr/bitel/latina_720p/chunks.m3u8
