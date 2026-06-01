@@ -27,7 +27,7 @@ https://stream.enlineatv.net/hls/retrotv/1_2/index.m3u8
 https://mitv.getstreamhosting.com:1936/live/live/chunklist_w1917734841.m3u8
 
 #EXTINF:-1 tvg-logo="https://gia.tv/streams/logo/209477.png" group-title="Peru",| RetroX + |
-https://live20.bozztv.com/giatv/giatv-RTVN/RTVN/chunks.m3u8
+https://lbgo.bozztv.com/ssh101/ssh101/retyroxtv/chunks.m3u8
 
 #EXTINF:-1 tvg-logo="https://gia.tv/streams/logo/209552.png" group-title="Peru",| OnTv |
 https://live20.bozztv.com/giatv/giatv-Ontv/Ontv/chunks.m3u8
