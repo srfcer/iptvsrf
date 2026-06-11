@@ -1,102 +1,85 @@
-from playwright.sync_api import sync_playwright
 import requests
 import base64
 import re
-import time
 import os
 
 # ==============================
 # CONFIG
 # ==============================
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+
 REPO = "srfcer/iptvsrf"
 PATH = "canales.m3u"
 
 API_URL = f"https://api.github.com/repos/{REPO}/contents/{PATH}"
-HEADERS = {"Authorization": f"token {GITHUB_TOKEN}"}
 
-stream_detectado = None
+HEADERS = {
+    "Authorization": f"token {GITHUB_TOKEN}",
+    "Accept": "application/vnd.github.v3+json"
+}
 
 
 # ==============================
-# DETECTAR STREAM
+# OBTENER STREAM (Dailymotion API)
 # ==============================
-def es_stream(url):
-    return "live-" in url and "m3u8" in url and "dmcdn.net" in url
-
-
-def convertir_a_720(url):
-    return re.sub(r'live-\d+', 'live-720', url)
-
-
 def obtener_stream():
-    global stream_detectado
+    video_id = "xa50i1c"
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+    url = f"https://www.dailymotion.com/player/metadata/video/{video_id}"
 
-        page = browser.new_page(
-            viewport={"width": 1920, "height": 1080},
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
-        )
+    headers = {
+        "User-Agent": "Mozilla/5.0"
+    }
 
-        page.set_extra_http_headers({
-            "Accept-Language": "es-ES,es;q=0.9"
-        })
+    try:
+        r = requests.get(url, headers=headers, timeout=10)
+        data = r.json()
 
-        def handle_request(request):
-            global stream_detectado
-            url = request.url
+        m3u8 = data["qualities"]["auto"][0]["url"]
 
-            if es_stream(url) and stream_detectado is None:
-                stream_detectado = url
-                print("🎯 Detectado:", url)
+        print("🎯 Detectado:", m3u8)
 
-        page.on("request", handle_request)
+        # ✅ Forzar 720p
+        return re.sub(r'live-\d+', 'live-720', m3u8)
 
-        print("🔎 Abriendo página...")
-        page.goto("https://panamericana.pe/tvenvivo", wait_until="load")
+    except Exception as e:
+        print("❌ Error obteniendo stream:", e)
+        return None
 
-        # ✅ simular usuario
-        page.mouse.move(500, 400)
-        page.mouse.click(500, 400)
-
-        time.sleep(20)
-
-        browser.close()
-
-    if stream_detectado:
-        return convertir_a_720(stream_detectado)
-
-    return None
 
 # ==============================
 # GITHUB
 # ==============================
+
 def obtener_m3u():
     r = requests.get(API_URL, headers=HEADERS)
+
+    print("🔎 GitHub status:", r.status_code)
+    print("📂 URL:", API_URL)
+
     data = r.json()
 
     if "content" not in data:
-        print(data)
-        raise Exception("Error leyendo GitHub")
+        print("❌ Error GitHub:", data)
+        raise Exception("No se pudo leer el archivo")
 
-    contenido = base64.b64decode(data["content"]).decode()
-    return contenido, data["sha"]
+    return base64.b64decode(data["content"]).decode(), data["sha"]
 
 
 def subir(contenido, sha):
     encoded = base64.b64encode(contenido.encode()).decode()
 
     payload = {
-        "message": "Update Panamericana token",
+        "message": "Update Panamericana token auto",
         "content": encoded,
-        "sha": sha
+        "sha": sha,
+        "branch": "main"   # ✅ ESTO SOLUCIONA EL 404
     }
 
     r = requests.put(API_URL, headers=HEADERS, json=payload)
 
-    print("✅ GitHub:", r.status_code)
+    print("✅ GitHub update:", r.status_code)
+    print(r.text)
 
 
 # ==============================
@@ -123,10 +106,10 @@ def actualizar_m3u(contenido, nueva_url):
                     print("✅ No hay cambios")
                     return contenido, False
 
-                else:
-                    print("🔄 Actualizando URL...")
-                    lineas[i + 1] = nueva_url
-                    return "\n".join(lineas), True
+                print("🔄 Actualizando URL...")
+                lineas[i + 1] = nueva_url
+
+                return "\n".join(lineas), True
 
     print("⚠️ No se encontró el canal")
     return contenido, False
@@ -136,6 +119,9 @@ def actualizar_m3u(contenido, nueva_url):
 # MAIN
 # ==============================
 if __name__ == "__main__":
+
+    if not GITHUB_TOKEN:
+        raise Exception("❌ Falta GITHUB_TOKEN")
 
     nueva_url = obtener_stream()
 
