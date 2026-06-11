@@ -34,7 +34,15 @@ def obtener_stream():
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
+
+        page = browser.new_page(
+            viewport={"width": 1920, "height": 1080},
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
+        )
+
+        page.set_extra_http_headers({
+            "Accept-Language": "es-ES,es;q=0.9"
+        })
 
         def handle_request(request):
             global stream_detectado
@@ -47,9 +55,13 @@ def obtener_stream():
         page.on("request", handle_request)
 
         print("🔎 Abriendo página...")
-        page.goto("https://panamericana.pe/tvenvivo")
+        page.goto("https://panamericana.pe/tvenvivo", wait_until="load")
 
-        time.sleep(10)
+        # ✅ simular usuario
+        page.mouse.move(500, 400)
+        page.mouse.click(500, 400)
+
+        time.sleep(20)
 
         browser.close()
 
@@ -57,7 +69,6 @@ def obtener_stream():
         return convertir_a_720(stream_detectado)
 
     return None
-
 
 # ==============================
 # GITHUB
