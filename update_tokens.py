@@ -1,7 +1,9 @@
-import requests
-import base64
-import re
 import os
+import base64
+import requests
+
+from playwright.sync_api import sync_playwright
+
 
 # ==============================
 # CONFIG
@@ -20,69 +22,51 @@ HEADERS = {
 
 
 # ==============================
-# PANAMERICANA (Dailymotion)
+# PANAMERICANA
 # ==============================
 def obtener_panamericana():
 
-    video_id = "xa50i1c"
+    stream = None
 
-    metadata_url = f"https://www.dailymotion.com/player/metadata/video/{video_id}"
+    with sync_playwright() as p:
 
-    try:
-        r = requests.get(
-            metadata_url,
-            headers={"User-Agent": "Mozilla/5.0"},
-            timeout=15
+        browser = p.chromium.launch(
+            headless=True
         )
 
-        data = r.json()
+        page = browser.new_page()
 
-        # URL inicial entregada por Dailymotion
-        m3u8 = data["qualities"]["auto"][0]["url"]
+        def on_request(request):
 
-        print("📡 URL inicial:")
-        print(m3u8)
+            nonlocal stream
 
-        # Descargar contenido del playlist
-        playlist = requests.get(
-            m3u8,
-            headers={"User-Agent": "Mozilla/5.0"},
-            timeout=15
-        ).text
-        
-        print("===== PLAYLIST =====")
-        print(playlist[:8000])
-        print("===== FIN PLAYLIST =====")
+            url = request.url
 
-        # Debug opcional
-        # print(playlist[:5000])
+            # Solo URLs reales del stream
+            if (
+                "cf.dmcdn.net" in url
+                and ".m3u8" in url
+            ):
 
-        # Buscar URL dmcdn real
-        match = re.search(
-            r'https://live[^"\s]+dmcdn\.net[^"\s]+\.m3u8',
-            playlist
+                print("🎯 Stream encontrado:")
+                print(url)
+
+                stream = url
+
+        page.on("request", on_request)
+
+        print("🔎 Abriendo Panamericana...")
+
+        page.goto(
+            "https://panamericana.pe/tvenvivo",
+            wait_until="networkidle"
         )
 
-        if match:
-            url_final = match.group(0)
+        page.wait_for_timeout(15000)
 
-            url_final = re.sub(
-                r'live-\d+',
-                'live-720',
-                url_final
-            )
+        browser.close()
 
-            print("🎯 Panamericana FINAL:")
-            print(url_final)
-
-            return url_final
-
-        print("❌ No se encontró URL dmcdn dentro del playlist")
-        return None
-
-    except Exception as e:
-        print("❌ Error Panamericana:", e)
-        return None
+    return stream
 
 
 # ==============================
@@ -90,7 +74,10 @@ def obtener_panamericana():
 # ==============================
 def obtener_m3u():
 
-    r = requests.get(API_URL, headers=HEADERS)
+    r = requests.get(
+        API_URL,
+        headers=HEADERS
+    )
 
     print("🔎 GitHub status:", r.status_code)
 
@@ -100,7 +87,10 @@ def obtener_m3u():
         print(data)
         raise Exception("Error leyendo GitHub")
 
-    contenido = base64.b64decode(data["content"]).decode()
+    contenido = base64.b64decode(
+        data["content"]
+    ).decode()
+
     return contenido, data["sha"]
 
 
@@ -108,7 +98,9 @@ def subir(contenido, sha):
 
     payload = {
         "message": "Auto update Panamericana token",
-        "content": base64.b64encode(contenido.encode()).decode(),
+        "content": base64.b64encode(
+            contenido.encode()
+        ).decode(),
         "sha": sha,
         "branch": "main"
     }
@@ -139,19 +131,24 @@ def actualizar_m3u(contenido, nueva_url):
 
             actual = lineas[i + 1].strip()
 
-            print("➡️ URL actual:", actual)
-            print("➡️ URL nueva :", nueva_url)
+            print("➡️ URL actual:")
+            print(actual)
+
+            print("➡️ URL nueva:")
+            print(nueva_url)
 
             if actual == nueva_url:
-                print("✅ Panamericana sin cambios")
+                print("✅ Sin cambios")
                 return contenido, False
+
+            print("🔄 Actualizando URL...")
 
             lineas[i + 1] = nueva_url
 
-            print("🔄 Panamericana actualizado")
             return "\n".join(lineas), True
 
-    print("⚠️ No se encontró tvg-id=\"PanamericanaTkns\"")
+    print("⚠️ No se encontró PanamericanaTkns")
+
     return contenido, False
 
 
@@ -166,7 +163,9 @@ if __name__ == "__main__":
     nueva_url = obtener_panamericana()
 
     if not nueva_url:
-        raise Exception("❌ No se pudo obtener la URL de Panamericana")
+        raise Exception(
+            "❌ No se pudo obtener la URL de Panamericana"
+        )
 
     contenido, sha = obtener_m3u()
 
@@ -177,6 +176,9 @@ if __name__ == "__main__":
 
     if cambio:
         print("\n🚀 Subiendo cambios...")
-        subir(nuevo_contenido, sha)
+        subir(
+            nuevo_contenido,
+            sha
+        )
     else:
         print("\n✅ Nada que actualizar")
