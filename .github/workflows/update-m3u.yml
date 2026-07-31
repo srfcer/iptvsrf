@@ -28,7 +28,7 @@ jobs:
 
       - name: Instalar navegadores Playwright
         run: playwright install --with-deps
-
+     
       - name: Ejecutar script update_tokens.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # ✅ CLAVE
