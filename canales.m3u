@@ -36,6 +36,9 @@ https://live20.bozztv.com/giatv/giatv-Ontv/Ontv/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3922-294x165-FFFFFF.jpg" group-title="Peru", |RETRO X PLUS| 
 https://lbgo.bozztv.com/ssh101/ssh101/retp/chunks.m3u8
 
+#EXTINF:-1 tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3945-294x165-FFFFFF.jpg" group-title="Peru", Tele+
+https://acceso.mediosdecostarica.com:3192/hybrid/play.m3u8
+
 #EXTINF:-1 tvg-logo="https://gia.tv/images/m3u-default.png" group-title="Peru",PANTALLA CLASICA (SERIES)
 https://live20.bozztv.com/akamaissh101/ssh101/pantallaclasics/chunks.m3u8
 
