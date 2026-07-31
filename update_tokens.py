@@ -26,38 +26,55 @@ def obtener_panamericana():
 
     video_id = "xa50i1c"
 
-    url = f"https://www.dailymotion.com/player/metadata/video/{video_id}"
+    metadata_url = f"https://www.dailymotion.com/player/metadata/video/{video_id}"
 
     try:
         r = requests.get(
-            url,
+            metadata_url,
             headers={"User-Agent": "Mozilla/5.0"},
-            timeout=10
+            timeout=15
         )
 
         data = r.json()
 
+        # URL inicial entregada por Dailymotion
         m3u8 = data["qualities"]["auto"][0]["url"]
 
-        # Obtener URL final dmcdn
-        r2 = requests.get(
+        print("📡 URL inicial:")
+        print(m3u8)
+
+        # Descargar contenido del playlist
+        playlist = requests.get(
             m3u8,
             headers={"User-Agent": "Mozilla/5.0"},
-            allow_redirects=True,
             timeout=15
+        ).text
+
+        # Debug opcional
+        # print(playlist[:5000])
+
+        # Buscar URL dmcdn real
+        match = re.search(
+            r'https://live[^"\s]+dmcdn\.net[^"\s]+\.m3u8',
+            playlist
         )
 
-        url_final = r2.url
+        if match:
+            url_final = match.group(0)
 
-        url_final = re.sub(
-            r'live-\d+',
-            'live-720',
-            url_final
-        )
+            url_final = re.sub(
+                r'live-\d+',
+                'live-720',
+                url_final
+            )
 
-        print("🎯 Panamericana:", url_final)
+            print("🎯 Panamericana FINAL:")
+            print(url_final)
 
-        return url_final
+            return url_final
+
+        print("❌ No se encontró URL dmcdn dentro del playlist")
+        return None
 
     except Exception as e:
         print("❌ Error Panamericana:", e)
@@ -65,35 +82,10 @@ def obtener_panamericana():
 
 
 # ==============================
-# AMÉRICA TV (MediaStream)
-# ==============================
-def obtener_america():
-    stream_id = "6099b04d9418ac082441dd74"
-
-    url = f"https://mdstrm.com/live-stream/{stream_id}.m3u8"
-
-    headers = {
-        "User-Agent": "Mozilla/5.0",
-        "Referer": "https://tvgo.americatv.com.pe/"
-    }
-
-    try:
-        r = requests.get(url, headers=headers, allow_redirects=True, timeout=10)
-        final_url = r.url
-
-        print("🎯 America TV:", final_url)
-
-        return final_url
-
-    except Exception as e:
-        print("❌ Error America:", e)
-        return None
-
-
-# ==============================
 # GITHUB
 # ==============================
 def obtener_m3u():
+
     r = requests.get(API_URL, headers=HEADERS)
 
     print("🔎 GitHub status:", r.status_code)
@@ -101,24 +93,27 @@ def obtener_m3u():
     data = r.json()
 
     if "content" not in data:
-        print("❌ Error GitHub:", data)
-        raise Exception("No se pudo leer el archivo")
+        print(data)
+        raise Exception("Error leyendo GitHub")
 
     contenido = base64.b64decode(data["content"]).decode()
     return contenido, data["sha"]
 
 
 def subir(contenido, sha):
-    encoded = base64.b64encode(contenido.encode()).decode()
 
     payload = {
-        "message": "Auto update IPTV tokens (America + Panamericana)",
-        "content": encoded,
+        "message": "Auto update Panamericana token",
+        "content": base64.b64encode(contenido.encode()).decode(),
         "sha": sha,
         "branch": "main"
     }
 
-    r = requests.put(API_URL, headers=HEADERS, json=payload)
+    r = requests.put(
+        API_URL,
+        headers=HEADERS,
+        json=payload
+    )
 
     print("✅ GitHub update:", r.status_code)
     print(r.text)
@@ -127,40 +122,33 @@ def subir(contenido, sha):
 # ==============================
 # ACTUALIZAR M3U
 # ==============================
-def actualizar_m3u(contenido, nuevas_urls):
+def actualizar_m3u(contenido, nueva_url):
 
     lineas = contenido.splitlines()
-    cambio = False
 
     for i, linea in enumerate(lineas):
 
-        # PANAMERICANA
         if 'tvg-id="PanamericanaTkns"' in linea:
-            if i + 1 < len(lineas) and nuevas_urls.get("panamericana"):
-                actual = lineas[i + 1].strip()
-                nueva = nuevas_urls["panamericana"]
 
-                if actual != nueva:
-                    print("🔄 Panamericana actualizado")
-                    lineas[i + 1] = nueva
-                    cambio = True
-                else:
-                    print("✅ Panamericana sin cambios")
+            if i + 1 >= len(lineas):
+                return contenido, False
 
-        # AMERICA TV
-        if 'tvg-id="AmericaTkns"' in linea:
-            if i + 1 < len(lineas) and nuevas_urls.get("america"):
-                actual = lineas[i + 1].strip()
-                nueva = nuevas_urls["america"]
+            actual = lineas[i + 1].strip()
 
-                if actual != nueva:
-                    print("🔄 America TV actualizado")
-                    lineas[i + 1] = nueva
-                    cambio = True
-                else:
-                    print("✅ America sin cambios")
+            print("➡️ URL actual:", actual)
+            print("➡️ URL nueva :", nueva_url)
 
-    return "\n".join(lineas), cambio
+            if actual == nueva_url:
+                print("✅ Panamericana sin cambios")
+                return contenido, False
+
+            lineas[i + 1] = nueva_url
+
+            print("🔄 Panamericana actualizado")
+            return "\n".join(lineas), True
+
+    print("⚠️ No se encontró tvg-id=\"PanamericanaTkns\"")
+    return contenido, False
 
 
 # ==============================
@@ -171,24 +159,20 @@ if __name__ == "__main__":
     if not GITHUB_TOKEN:
         raise Exception("❌ Falta GITHUB_TOKEN")
 
-    nuevas_urls = {}
+    nueva_url = obtener_panamericana()
 
-    # Obtener streams
-    nuevas_urls["panamericana"] = obtener_panamericana()
-    nuevas_urls["america"] = obtener_america()
-
-    print("\n🎯 URLs finales:")
-    for k, v in nuevas_urls.items():
-        print(k, ":", v)
+    if not nueva_url:
+        raise Exception("❌ No se pudo obtener la URL de Panamericana")
 
     contenido, sha = obtener_m3u()
 
-    nuevo_contenido, cambio = actualizar_m3u(contenido, nuevas_urls)
+    nuevo_contenido, cambio = actualizar_m3u(
+        contenido,
+        nueva_url
+    )
 
-    
     if cambio:
         print("\n🚀 Subiendo cambios...")
         subir(nuevo_contenido, sha)
     else:
         print("\n✅ Nada que actualizar")
-
