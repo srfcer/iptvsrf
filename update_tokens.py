@@ -23,19 +23,41 @@ HEADERS = {
 # PANAMERICANA (Dailymotion)
 # ==============================
 def obtener_panamericana():
+
     video_id = "xa50i1c"
 
     url = f"https://www.dailymotion.com/player/metadata/video/{video_id}"
 
     try:
-        r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
+        r = requests.get(
+            url,
+            headers={"User-Agent": "Mozilla/5.0"},
+            timeout=10
+        )
+
         data = r.json()
 
         m3u8 = data["qualities"]["auto"][0]["url"]
 
-        print("🎯 Panamericana:", m3u8)
+        # Obtener URL final dmcdn
+        r2 = requests.get(
+            m3u8,
+            headers={"User-Agent": "Mozilla/5.0"},
+            allow_redirects=True,
+            timeout=15
+        )
 
-        return re.sub(r'live-\d+', 'live-720', m3u8)
+        url_final = r2.url
+
+        url_final = re.sub(
+            r'live-\d+',
+            'live-720',
+            url_final
+        )
+
+        print("🎯 Panamericana:", url_final)
+
+        return url_final
 
     except Exception as e:
         print("❌ Error Panamericana:", e)
