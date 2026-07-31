@@ -1,6 +1,7 @@
 import os
 import base64
 import requests
+import re
 
 from playwright.sync_api import sync_playwright
 
@@ -36,22 +37,29 @@ def obtener_panamericana():
 
         page = browser.new_page()
 
+        
         def on_request(request):
-
+        
             nonlocal stream
-
+        
             url = request.url
-
-            # Solo URLs reales del stream
+        
             if (
-                "cf.dmcdn.net" in url
+                "dmcdn.net" in url
                 and ".m3u8" in url
+                and "live-" in url
+                and "xa50i1c" in url
             ):
-
-                print("🎯 Stream encontrado:")
-                print(url)
-
-                stream = url
+        
+                stream = re.sub(
+                    r"live-\d+",
+                    "live-720",
+                    url
+                )
+        
+                print("🎯 STREAM 720:")
+                print(stream)
+                
 
         page.on("request", on_request)
 
