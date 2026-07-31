@@ -49,6 +49,10 @@ def obtener_panamericana():
             headers={"User-Agent": "Mozilla/5.0"},
             timeout=15
         ).text
+        
+        print("===== PLAYLIST =====")
+        print(playlist[:8000])
+        print("===== FIN PLAYLIST =====")
 
         # Debug opcional
         # print(playlist[:5000])
