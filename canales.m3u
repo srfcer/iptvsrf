@@ -9,7 +9,7 @@
 #EXTINFX:-1 tvg-logo="https://taltaltv.net/logostv/LOGOTV.jpg" group-title="Peru",TALTALTV.NET (Series)
 https://live20.bozztv.com/giatv/giatv-TALTALTVANIMACION/TALTALTVANIMACION/chunks.m3u8
 
-#EXTINFX:-1 tvg-logo="https://i.ibb.co/pjsGq3RM/in35.png" group-title="Peru",| Cine35mm |
+#EXTINF:-1 tvg-logo="https://i.ibb.co/pjsGq3RM/in35.png" group-title="Peru",| Cine35mm |
 https://live20.bozztv.com/giatv/giatv-live35mm/live35mm/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/sf3GT8N.jpeg" group-title="Peru", | RETRO PALMARES TV |
