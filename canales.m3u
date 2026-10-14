@@ -96,8 +96,11 @@ https://live2.eu-north-1b.cf.dmcdn.net/sec2(tckHvJJzPQvnnVWN_m866sz7A4C96g7ZOYUz
 #EXTINFX:-1 tvg-name="Panamericana TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/26/Panamericana_tv_2009.png" tvg-id="PanamericanaTV.pe" tvg-country="PE" group-title="Peru",Panamericana TV
 http://skybacon.xyz:8080/live/akemiav/Nt2VFH@/124554.ts
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/4NMlwrm.jpeg" group-title="Peru",01 | WILLAX |
+#EXTINFX:-1 tvg-logo="https://i.imgur.com/4NMlwrm.jpeg" group-title="Peru",01 | WILLAX |
 https://live-evg7.tv360.bitel.com.pe/bitel/willax_abr/bitel/willax_720p/chunks.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/4NMlwrm.jpeg" group-title="Peru",01 | WILLAX |
+http://skybacon.xyz:8080/live/akemiav/Nt2VFH@/55207.ts
 
 #EXTINFX:-1 tvg-logo="https://i.imgur.com/XfRqKoI.jpeg" group-title="Peru",03 | RPP TV ᴴᴰ |
 https://jireh-3-hls-video-pe-isp.dps.live/hls-video/567ffde3fa319fadf3419efda25619456231dfea/rpptv/rpptv.smil/rpptv/livestream1/chunks.m3u8
