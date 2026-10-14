@@ -87,13 +87,13 @@ https://jireh-1-hls-video-pe-isp.dps.live/hls-video/567ffde3fa319fadf3419efda256
 #EXTINFX:-1 tvg-id="AmericaTkns" tvg-logo="https://raw.githubusercontent.com/jesaro15/iptv/main/images/americatv.jpg" group-title="Peru",04 | AMERICA TV ᴴᴰ |
 https://mdstrm.com/live-stream/6099b04d9418ac082441dd74.m3u8
 
-#EXTINFX:-1 tvg-id="AmericaTkns" tvg-logo="https://raw.githubusercontent.com/jesaro15/iptv/main/images/americatv.jpg" group-title="Peru",04 | AMERICA TV ᴴᴰ |
+#EXTINF:-1 tvg-id="AmericaTkns" tvg-logo="https://raw.githubusercontent.com/jesaro15/iptv/main/images/americatv.jpg" group-title="Peru",04 | AMERICA TV ᴴᴰ |
 http://skybacon.xyz:8080/live/akemiav/Nt2VFH@/31931.ts
 
 #EXTINF:-1 tvg-id="PanamericanaTkns" tvg-logo="https://i.imgur.com/8dElUGL.jpeg" group-title="Peru",05 | PANAMERICANA TV ᴴᴰ |
 https://live2.eu-north-1b.cf.dmcdn.net/sec2(tckHvJJzPQvnnVWN_m866sz7A4C96g7ZOYUzJwpvSqg6Ge91baai7VRwD1kdak146jmmTWHwADt2O7JLUqjFyauNQJGUad4MEq1gd61Gh45OPJ7J-yKtj0gfRs6vnern)/cloud/3/xa50i1c/s/live-720.m3u8
 
-#EXTINFX:-1 tvg-name="Panamericana TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/26/Panamericana_tv_2009.png" tvg-id="PanamericanaTV.pe" tvg-country="PE" group-title="Peru",Panamericana TV
+#EXTINF:-1 tvg-name="Panamericana TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/26/Panamericana_tv_2009.png" tvg-id="PanamericanaTV.pe" tvg-country="PE" group-title="Peru",Panamericana TV
 http://skybacon.xyz:8080/live/akemiav/Nt2VFH@/124554.ts
 
 #EXTINFX:-1 tvg-logo="https://i.imgur.com/4NMlwrm.jpeg" group-title="Peru",01 | WILLAX |
